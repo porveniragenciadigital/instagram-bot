@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --darkest: #051024;
+    --dark2: #071428;
+    --orange: #ff7a48;
+    --muted: #5a6a80;
+  }
+  html, body { width: 1080px; height: 1350px; overflow: hidden; }
+  body {
+    background-color: var(--darkest);
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Diagonal divider */
+  .diagonal {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .diagonal::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1px);
+    width: 1.5px;
+    height: 200%;
+    background: linear-gradient(to bottom, transparent 0%, rgba(255,122,72,0.3) 30%, rgba(255,122,72,0.3) 70%, transparent 100%);
+    transform: rotate(-12deg);
+    transform-origin: center center;
+  }
+
+  .half {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 90px;
+    z-index: 2;
+  }
+
+  .half.top {
+    top: 0;
+    align-items: flex-start;
+    background-image: radial-gradient(ellipse 500px 350px at 80% 0%, rgba(255,122,72,0.1) 0%, transparent 70%);
+  }
+
+  .half.bottom {
+    bottom: 0;
+    align-items: flex-end;
+    text-align: right;
+    background-image: radial-gradient(ellipse 500px 350px at 20% 100%, rgba(16,55,120,0.25) 0%, transparent 70%);
+  }
+
+  .concept-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .concept-icon {
+    width: 80px; height: 80px;
+    margin-bottom: 28px;
+  }
+  .concept-icon i { width: 64px; height: 64px; }
+  .half.top .concept-icon i { color: #fff; }
+  .half.bottom .concept-icon i { color: var(--orange); }
+
+  .concept-headline {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 110px;
+    line-height: 0.88;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+  }
+  .half.top .concept-headline { color: #fff; }
+  .half.bottom .concept-headline { color: var(--orange); }
+
+  .concept-sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--muted);
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 36px;
+    left: 0; right: 0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: #25374f;
+    text-transform: uppercase;
+    z-index: 3;
+  }
+</style>
+</head>
+<body>
+
+<div class="diagonal"></div>
+
+<div class="half top">
+  <div class="concept-label">{{ top_label }}</div>
+  <div class="concept-icon"><i data-lucide="{{ top_icon }}"></i></div>
+  <div class="concept-headline">{{ top_headline }}</div>
+  <div class="concept-sub">{{ top_sub }}</div>
+</div>
+
+<div class="half bottom">
+  <div class="concept-label">{{ bottom_label }}</div>
+  <div class="concept-icon"><i data-lucide="{{ bottom_icon }}"></i></div>
+  <div class="concept-headline">{{ bottom_headline }}</div>
+  <div class="concept-sub">{{ bottom_sub }}</div>
+</div>
+
+<div class="footer">www.porveniragenciadigital.com</div>
+
+<script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --darkest: #051024;
+    --dark2:   #071830;
+    --orange:  #ff7a48;
+    --muted:   #5a6a80;
+    --card:    rgba(10,28,58,0.7);
+    --border:  rgba(255,255,255,0.07);
+  }
+  html, body { width: 1080px; height: 1350px; overflow: hidden; }
+  body {
+    background-color: var(--darkest);
+    background-image:
+      radial-gradient(ellipse 600px 400px at 85% -5%, rgba(255,122,72,0.14) 0%, transparent 60%),
+      radial-gradient(ellipse 500px 400px at -8% 105%, rgba(16,55,120,0.25) 0%, transparent 65%);
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 80px 56px;
+    position: relative;
+    gap: 0;
+  }
+
+  /* decorative + marks */
+  .plus {
+    position: absolute;
+    color: rgba(255,122,72,0.35);
+    font-size: 18px; font-weight: 300; line-height: 1;
+    user-select: none;
+  }
+
+  .tag {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.18em;
+    color: var(--orange); text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .headline {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 92px; line-height: 0.88;
+    text-align: center; letter-spacing: 0.02em;
+    margin-bottom: 16px;
+  }
+
+  .subtitle {
+    font-size: 16px; line-height: 1.6; color: var(--muted);
+    text-align: center; max-width: 820px;
+    margin-bottom: 36px;
+  }
+  .subtitle strong { color: var(--orange); font-weight: 700; }
+
+  .steps { width: 100%; display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; }
+
+  .step-card {
+    display: flex; align-items: flex-start; gap: 18px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--orange);
+    border-radius: 0 14px 14px 0;
+    padding: 20px 24px;
+  }
+  .step-icon-wrap {
+    flex-shrink: 0;
+    width: 50px; height: 50px;
+    background: rgba(255,122,72,0.12);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .step-icon-wrap i { color: var(--orange); width: 22px; height: 22px; }
+  .step-num-title {
+    font-size: 15px; font-weight: 800;
+    letter-spacing: 0.04em; color: #fff;
+    margin-bottom: 6px;
+  }
+  .step-desc { font-size: 14px; color: var(--muted); line-height: 1.55; }
+  .step-desc strong { color: var(--orange); font-weight: 700; }
+
+  /* Result/CTA box */
+  .result-box {
+    width: 100%;
+    background: rgba(10,28,58,0.8);
+    border: 1px solid rgba(255,122,72,0.3);
+    border-radius: 16px;
+    padding: 26px 30px;
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center; gap: 10px;
+  }
+  .result-tag {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.2em;
+    color: var(--orange); text-transform: uppercase;
+    border: 1px solid rgba(255,122,72,0.4);
+    border-radius: 100px; padding: 5px 14px;
+  }
+  .result-headline {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px; letter-spacing: 0.04em; color: #fff;
+  }
+  .result-desc {
+    font-size: 15px; color: var(--muted); line-height: 1.6;
+    max-width: 720px;
+  }
+  .result-desc strong { color: #fff; font-weight: 700; }
+
+  footer {
+    position: absolute; bottom: 32px; left: 0; right: 0;
+    text-align: center;
+    font-size: 12px; font-weight: 500;
+    letter-spacing: 0.18em; color: #25374f; text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<!-- decorative + marks -->
+<span class="plus" style="right:52px; bottom:160px">+</span>
+<span class="plus" style="left:52px; bottom:130px">+</span>
+<span class="plus" style="right:80px; bottom:110px">+</span>
+
+<div class="tag">{{ tag }}</div>
+<div class="headline">{{ headline }}</div>
+<p class="subtitle">{{ subtitle | safe }}</p>
+
+<div class="steps">
+  {% for s in steps %}
+  <div class="step-card">
+    <div class="step-icon-wrap"><i data-lucide="{{ s.icon }}"></i></div>
+    <div>
+      <div class="step-num-title">{{ s.number }} {{ s.title }}</div>
+      <div class="step-desc">{{ s.description | safe }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="result-box">
+  <span class="result-tag">{{ result_tag }}</span>
+  <div class="result-headline">{{ result_headline }}</div>
+  <p class="result-desc">{{ result_description | safe }}</p>
+</div>
+
+<footer>www.porveniragenciadigital.com</footer>
+<script>lucide.createIcons();</script>
+</body>
+</html>

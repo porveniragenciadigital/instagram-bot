@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+current_post.json
+output/concept_*.png
+.DS_Store
+.claude/

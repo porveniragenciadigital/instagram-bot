@@ -1,0 +1,422 @@
+[
+  {
+    "template": "service_feature",
+    "caption_theme": "automatizacion_chatbots",
+    "data": {
+      "tag": "IA & CHATBOTS",
+      "headline_white": "AUTOMATIZACIÓN",
+      "headline_orange": "& IA",
+      "icon": "bot",
+      "features": [
+        { "icon": "message-square", "title": "CHATBOTS 24/7", "subtitle": "WhatsApp, Telegram, redes y web." },
+        { "icon": "mic", "title": "AGENTES DE VOZ", "subtitle": "IA que habla y entiende a tus clientes." },
+        { "icon": "trending-up", "title": "MAS CONVERSION", "subtitle": "Convierte visitas en clientes automaticamente." }
+      ]
+    }
+  },
+  {
+    "template": "hook_text",
+    "caption_theme": "negocio_no_duerme",
+    "data": {
+      "tag": "ONLINE 24/7",
+      "headline_white": "TU NEGOCIO",
+      "headline_orange": "NO DUERME",
+      "chat_messages": [
+        { "type": "incoming", "text": "Hola, quiero informacion sobre vuestros servicios. Estais abiertos?", "time": "Domingo, 02:30 AM" },
+        { "type": "outgoing", "text": "Hola! Claro que si. Soy el asistente IA de Porvenir. Te interesa diseno web o automatizacion?", "time": "Leido al instante" }
+      ],
+      "cta_text": "NO PIERDAS MAS VENTAS",
+      "cta_sub": "Automatiza tu atencion al cliente hoy."
+    }
+  },
+  {
+    "template": "service_feature",
+    "caption_theme": "diseno_web",
+    "data": {
+      "tag": "HTML5 / CSS",
+      "headline_white": "DISENO WEB",
+      "headline_orange": "ESTRATEGICO",
+      "icon": "layout-dashboard",
+      "features": [
+        { "icon": "zap", "title": "ULTRA RAPIDO", "subtitle": "Carga instantanea para no perder visitas." },
+        { "icon": "smartphone", "title": "100% RESPONSIVE", "subtitle": "Perfecto en movil, tablet y escritorio." },
+        { "icon": "palette", "title": "DISENO PREMIUM", "subtitle": "Estetica moderna que eleva tu marca." }
+      ]
+    }
+  },
+  {
+    "template": "numbered_steps",
+    "caption_theme": "metodo_porvenir",
+    "data": {
+      "headline": "EL METODO",
+      "steps": [
+        { "number": "01", "title": "ANALISIS", "subtitle": "Estrategia & Datos" },
+        { "number": "02", "title": "DESARROLLO", "subtitle": "Codigo & Diseno IA" },
+        { "number": "03", "title": "ESCALADO", "subtitle": "Lanzamiento & Crecimiento" }
+      ]
+    }
+  },
+  {
+    "template": "service_feature",
+    "caption_theme": "ux_accesibilidad",
+    "data": {
+      "tag": "WCAG 2.1",
+      "headline_white": "UX &",
+      "headline_orange": "ACCESIBILIDAD",
+      "icon": "accessibility",
+      "features": [
+        { "icon": "search", "title": "AUDITORIAS HEURISTICAS", "subtitle": "Identificamos cada punto de friccion." },
+        { "icon": "circle-check", "title": "CUMPLIMIENTO LEGAL W3C", "subtitle": "Tu web, adaptada a la normativa vigente." },
+        { "icon": "users", "title": "EXPERIENCIA INCLUSIVA", "subtitle": "Diseno para el 100% de tus usuarios." }
+      ]
+    }
+  },
+  {
+    "template": "split_concept",
+    "caption_theme": "visibilidad_accesibilidad",
+    "data": {
+      "top_icon": "eye",
+      "top_label": "SEO",
+      "top_headline": "VISIBILIDAD",
+      "top_sub": "Que te encuentren.",
+      "bottom_icon": "accessibility",
+      "bottom_label": "WCAG",
+      "bottom_headline": "ACCESIBILIDAD",
+      "bottom_sub": "Que te usen."
+    }
+  },
+  {
+    "template": "service_feature",
+    "caption_theme": "agentes_voz",
+    "data": {
+      "tag": "LEY 10/2025",
+      "headline_white": "AGENTES",
+      "headline_orange": "TELEFONICOS IA",
+      "icon": "phone-call",
+      "features": [
+        { "icon": "clock", "title": "RESPUESTA EN 3 SEG", "subtitle": "Sin tiempos de espera, sin musica de cola." },
+        { "icon": "brain", "title": "95% RESOLUCION", "subtitle": "La mayoria de consultas, resueltas sin humano." },
+        { "icon": "shield-check", "title": "LEY 10/2025", "subtitle": "Cumplimiento legal desde el primer dia." }
+      ]
+    }
+  },
+  {
+    "template": "hook_text",
+    "caption_theme": "ley_10_2025",
+    "data": {
+      "tag": "OBLIGATORIO DIC. 2026",
+      "headline_white": "LA LEY OBLIGA",
+      "headline_orange": "A TU EMPRESA",
+      "chat_messages": [
+        { "type": "incoming", "text": "Sigo usando mi centralita de siempre. No tengo tiempo para cambiar nada.", "time": "Tu competencia, ahora mismo" },
+        { "type": "outgoing", "text": "La Ley 10/2025 exige atencion inmediata. Te lo montamos en dias, no en meses.", "time": "Porvenir" }
+      ],
+      "cta_text": "CUMPLE ANTES DE DICIEMBRE",
+      "cta_sub": "Consulta gratuita en el link de la bio."
+    }
+  },
+  {
+    "template": "service_feature",
+    "caption_theme": "apps_moviles",
+    "data": {
+      "tag": "iOS & ANDROID",
+      "headline_white": "APPS MOVILES",
+      "headline_orange": "A MEDIDA",
+      "icon": "smartphone",
+      "features": [
+        { "icon": "layers", "title": "NATIVAS E HIBRIDAS", "subtitle": "iOS y Android con una sola base de codigo." },
+        { "icon": "cpu", "title": "INGENIERIA REAL", "subtitle": "Sin plantillas. Arquitectura desde cero." },
+        { "icon": "rocket", "title": "PUBLICACION EN STORES", "subtitle": "App Store y Google Play. Nos encargamos." }
+      ]
+    }
+  },
+  {
+    "template": "numbered_steps",
+    "caption_theme": "proceso_web",
+    "data": {
+      "headline": "TU WEB EN 3 PASOS",
+      "steps": [
+        { "number": "01", "title": "ESTRATEGIA", "subtitle": "Objetivos, audiencia & competencia" },
+        { "number": "02", "title": "DISENO & CODIGO", "subtitle": "Pixel perfect, rapido y accesible" },
+        { "number": "03", "title": "LANZAMIENTO", "subtitle": "Publicacion, SEO y seguimiento" }
+      ]
+    }
+  },
+  {
+    "template": "split_concept",
+    "caption_theme": "codigo_diseno",
+    "data": {
+      "top_icon": "code-2",
+      "top_label": "INGENIERIA",
+      "top_headline": "CODIGO",
+      "top_sub": "Que funciona.",
+      "bottom_icon": "palette",
+      "bottom_label": "UX",
+      "bottom_headline": "DISENO",
+      "bottom_sub": "Que convierte."
+    }
+  },
+  {
+    "template": "service_feature",
+    "caption_theme": "formacion_ia",
+    "data": {
+      "tag": "FORMACION",
+      "headline_white": "IA PARA",
+      "headline_orange": "TU EQUIPO",
+      "icon": "graduation-cap",
+      "features": [
+        { "icon": "book-open", "title": "TALLERES PRACTICOS", "subtitle": "Casos reales de tu sector, no teoria." },
+        { "icon": "users", "title": "PARA CUALQUIER NIVEL", "subtitle": "Desde directivos hasta operaciones." },
+        { "icon": "bar-chart-2", "title": "ROI MEDIBLE", "subtitle": "Horas ahorradas desde la primera semana." }
+      ]
+    }
+  },
+  {
+    "template": "hook_text",
+    "caption_theme": "sin_web_no_existes",
+    "data": {
+      "tag": "REALIDAD DIGITAL",
+      "headline_white": "SIN WEB",
+      "headline_orange": "NO EXISTES",
+      "chat_messages": [
+        { "type": "incoming", "text": "Busque vuestra empresa en Google y no os encontre. Al final contrate a la competencia.", "time": "Cliente perdido" },
+        { "type": "outgoing", "text": "Una web rapida y bien posicionada no es un gasto. Es tu mejor comercial.", "time": "Porvenir" }
+      ],
+      "cta_text": "EMPIEZA HOY",
+      "cta_sub": "Primera consulta gratuita en el link de la bio."
+    }
+  },
+  {
+    "template": "numbered_steps",
+    "caption_theme": "proceso_chatbot",
+    "data": {
+      "headline": "TU CHATBOT EN 3 DIAS",
+      "steps": [
+        { "number": "01", "title": "BRIEFING", "subtitle": "Analizamos tus casos de uso reales" },
+        { "number": "02", "title": "INTEGRACION", "subtitle": "WhatsApp, web o donde estes" },
+        { "number": "03", "title": "EN PRODUCCION", "subtitle": "Atendiendo clientes desde el dia 1" }
+      ]
+    }
+  },
+  {
+    "template": "split_concept",
+    "caption_theme": "antes_despues_ia",
+    "data": {
+      "top_icon": "x-circle",
+      "top_label": "SIN IA",
+      "top_headline": "8 HORAS",
+      "top_sub": "Respondiendo lo mismo.",
+      "bottom_icon": "check-circle",
+      "bottom_label": "CON IA",
+      "bottom_headline": "AUTOMATICO",
+      "bottom_sub": "Tu tiempo, para lo que importa."
+    }
+  },
+  {
+    "template": "service_feature",
+    "caption_theme": "diseno_web_conversion",
+    "data": {
+      "tag": "CONVERSION WEB",
+      "headline_white": "WEBS QUE",
+      "headline_orange": "VENDEN",
+      "icon": "mouse-pointer-click",
+      "features": [
+        { "icon": "target", "title": "ARQUITECTURA DE CONVERSION", "subtitle": "Cada seccion empuja al usuario a actuar." },
+        { "icon": "search", "title": "SEO TECNICO", "subtitle": "Visibilidad organica desde el lanzamiento." },
+        { "icon": "shield", "title": "WCAG & LEGAL", "subtitle": "Accesibilidad y cumplimiento incluidos." }
+      ]
+    }
+  },
+  {
+    "template": "hook_text",
+    "caption_theme": "app_movil_negocio",
+    "data": {
+      "tag": "APPS MOVILES",
+      "headline_white": "TU NEGOCIO",
+      "headline_orange": "EN CADA BOLSILLO",
+      "chat_messages": [
+        { "type": "incoming", "text": "Necesito que mis clientes puedan pedir cita desde el movil sin llamar.", "time": "Hoy" },
+        { "type": "outgoing", "text": "En 4 semanas tienes tu app en App Store y Google Play. Sin plantillas, ingenieria real.", "time": "Porvenir" }
+      ],
+      "cta_text": "HABLEMOS DE TU APP",
+      "cta_sub": "Consulta gratuita en el link de la bio."
+    }
+  },
+  {
+    "template": "numbered_steps",
+    "caption_theme": "proceso_agente_voz",
+    "data": {
+      "headline": "AGENTE DE VOZ IA",
+      "steps": [
+        { "number": "01", "title": "CONFIGURACION", "subtitle": "Flujos, FAQs y tono de marca" },
+        { "number": "02", "title": "INTEGRACION", "subtitle": "Con tu centralita o desde cero" },
+        { "number": "03", "title": "OPERATIVO", "subtitle": "Respondiendo llamadas 24/7" }
+      ]
+    }
+  },
+  {
+    "template": "split_concept",
+    "caption_theme": "velocidad_estetica",
+    "data": {
+      "top_icon": "zap",
+      "top_label": "PERFORMANCE",
+      "top_headline": "VELOCIDAD",
+      "top_sub": "Que no pierde visitas.",
+      "bottom_icon": "sparkles",
+      "bottom_label": "BRANDING",
+      "bottom_headline": "ESTETICA",
+      "bottom_sub": "Que genera confianza."
+    }
+  },
+  {
+    "template": "service_feature",
+    "caption_theme": "auditoria_ux",
+    "data": {
+      "tag": "AUDITORIA UX",
+      "headline_white": "DONDE PIERDES",
+      "headline_orange": "CLIENTES",
+      "icon": "scan-search",
+      "features": [
+        { "icon": "map", "title": "MAPA DE FRICCIONES", "subtitle": "Cada punto donde el usuario abandona." },
+        { "icon": "file-text", "title": "INFORME ACCIONABLE", "subtitle": "Prioridades claras, no teoria." },
+        { "icon": "trending-up", "title": "PLAN DE MEJORA", "subtitle": "Con estimacion de impacto en conversion." }
+      ]
+    }
+  },
+  {
+    "template": "infographic_steps",
+    "caption_theme": "identifica_el_dolor",
+    "data": {
+      "tag": "ANTES DE LA IA...",
+      "headline": "IDENTIFICA EL DOLOR",
+      "subtitle": "No puedes optimizar lo que no entiendes. Para implementar IA con exito, primero hay que encontrar los <strong>puntos de friccion</strong>.",
+      "steps": [
+        {
+          "number": "1.",
+          "icon": "clock",
+          "title": "DONDE PIERDES TIEMPO?",
+          "description": "Detectamos tareas repetitivas y manuales que drenan horas productivas de tu equipo cada semana."
+        },
+        {
+          "number": "2.",
+          "icon": "triangle-alert",
+          "title": "DONDE HAY ERRORES?",
+          "description": "Identificamos fallos humanos en procesos de datos o atencion que cuestan dinero y reputacion."
+        },
+        {
+          "number": "3.",
+          "icon": "layers",
+          "title": "QUE NO SE HACE?",
+          "description": "Localizamos proyectos estrategicos y rentables que siempre se posponen por falta de tiempo."
+        }
+      ],
+      "result_tag": "DIAGNOSTICO PREVIO",
+      "result_headline": "NO AUTOMATICES EL CAOS",
+      "result_description": "La IA no hace milagros sobre el desorden. Primero <strong>auditamos</strong>, luego <strong>implementamos</strong>."
+    }
+  },
+  {
+    "template": "infographic_steps",
+    "caption_theme": "ecosistema_digital",
+    "data": {
+      "tag": "METODO PORVENIR",
+      "headline": "ECOSISTEMA DIGITAL RENTABLE",
+      "subtitle": "Tres capas de ingenieria que se refuerzan entre si para convertir tu presencia digital en una <strong>maquina de captacion</strong>.",
+      "steps": [
+        {
+          "number": "1.",
+          "icon": "code-2",
+          "title": "INGENIERIA & WEB",
+          "description": "Codigo limpio y <strong>Diseno Responsive</strong>. Sin una base tecnica perfecta, no hay crecimiento posible."
+        },
+        {
+          "number": "2.",
+          "icon": "scan-face",
+          "title": "UX & ACCESIBILIDAD",
+          "description": "Eliminamos barreras. Tu web intuitiva y legalmente accesible para <strong>retener al 100% del trafico</strong>."
+        },
+        {
+          "number": "3.",
+          "icon": "bot",
+          "title": "AUTOMATIZACION IA",
+          "description": "<strong>Chatbots & Agentes de Voz</strong> que atienden, filtran y cierran ventas en automatico mientras duermes."
+        }
+      ],
+      "result_tag": "OBJETIVO DESBLOQUEADO",
+      "result_headline": "ESCALABILIDAD TOTAL",
+      "result_description": "Conversion al maximo, carga operativa al minimo, retencion de clientes <strong>a largo plazo</strong>."
+    }
+  },
+  {
+    "template": "comparison",
+    "caption_theme": "decisiones_hibridas",
+    "data": {
+      "tag": "NUEVO PARADIGMA",
+      "headline": "DECISIONES HIBRIDAS",
+      "subtitle": "Lo mejor de dos mundos trabajando para ti.",
+      "left": {
+        "title": "HUMANO",
+        "icon": "fingerprint",
+        "points": ["Creatividad", "Empatia", "Vision Estrategica"]
+      },
+      "right": {
+        "title": "INTELIGENCIA ARTIFICIAL",
+        "icon": "cpu",
+        "points": ["Velocidad", "Analisis de Datos", "24/7 Disponible"]
+      },
+      "result_tag": "RESULTADO",
+      "result_headline": "SINERGIA TOTAL",
+      "result_description": "La IA procesa, tu decides. Una colaboracion que te hace <strong>mas rapido y mas preciso</strong>.",
+      "metrics": [
+        { "icon": "zap", "value": "10X", "label": "AGILIDAD" },
+        { "icon": "trending-up", "value": "MAX", "label": "RENTABILIDAD" }
+      ]
+    }
+  },
+  {
+    "template": "orb_hero",
+    "caption_theme": "potencia_con_ia",
+    "data": {
+      "pre_text": "POTENCIA TU NEGOCIO",
+      "headline_white": "CON",
+      "headline_orange": "IA",
+      "subtitle": "Automatizacion · Chatbots · Datos"
+    }
+  },
+  {
+    "template": "orb_hero",
+    "caption_theme": "apps_en_tus_manos",
+    "data": {
+      "pre_text": "INGENIERIA DE SOFTWARE",
+      "headline_white": "TU APP",
+      "headline_orange": "EN STORES",
+      "subtitle": "iOS · Android · Produccion"
+    }
+  },
+  {
+    "template": "comparison",
+    "caption_theme": "con_sin_chatbot",
+    "data": {
+      "tag": "COMPARATIVA",
+      "headline": "CON Y SIN CHATBOT",
+      "subtitle": "El mismo negocio. Resultado completamente diferente.",
+      "left": {
+        "title": "SIN IA",
+        "icon": "x-circle",
+        "points": ["8h respondiendo emails", "Clientes sin atencion 24/7", "Ventas perdidas por noche"]
+      },
+      "right": {
+        "title": "CON IA",
+        "icon": "bot",
+        "points": ["Respuesta en segundos", "Atencion automatica 24/7", "Leads cualificados solos"]
+      },
+      "result_tag": "RESULTADO REAL",
+      "result_headline": "MAS VENTAS, MENOS TRABAJO",
+      "result_description": "Tus clientes atendidos al instante. Tu, enfocada en <strong>lo que realmente importa</strong>.",
+      "metrics": [
+        { "icon": "clock", "value": "24/7", "label": "DISPONIBILIDAD" },
+        { "icon": "trending-up", "value": "95%", "label": "RESOLUCION" }
+      ]
+    }
+  }
+]

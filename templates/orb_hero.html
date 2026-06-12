@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --darkest: #051024;
+    --dark2:   #071830;
+    --orange:  #ff7a48;
+    --muted:   #5a6a80;
+  }
+  html, body { width: 1080px; height: 1350px; overflow: hidden; }
+  body {
+    background-color: var(--darkest);
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Concentric circles */
+  .circles {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -56%);
+    width: 900px; height: 900px;
+    pointer-events: none;
+  }
+  .circle {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  .circle:nth-child(1) { width: 260px; height: 260px; border-color: rgba(255,122,72,0.2); }
+  .circle:nth-child(2) { width: 420px; height: 420px; border-style: dashed; border-color: rgba(255,122,72,0.12); }
+  .circle:nth-child(3) { width: 600px; height: 600px; border-color: rgba(255,255,255,0.05); }
+  .circle:nth-child(4) { width: 800px; height: 800px; border-color: rgba(255,255,255,0.03); }
+
+  /* Glowing orb */
+  .orb {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -56%);
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 38% 36%, #ffaa80, var(--orange) 60%, #c94a20);
+    box-shadow:
+      0 0 60px 20px rgba(255,122,72,0.5),
+      0 0 120px 40px rgba(255,122,72,0.25),
+      0 0 200px 60px rgba(255,122,72,0.12);
+  }
+
+  /* Text card */
+  .card {
+    position: absolute;
+    bottom: 200px; left: 80px; right: 80px;
+    background: rgba(7,24,48,0.82);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 24px;
+    padding: 40px 52px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+  }
+  .pre-text {
+    font-size: 17px; font-weight: 700;
+    letter-spacing: 0.12em; color: var(--muted);
+    text-transform: uppercase; margin-bottom: 12px;
+  }
+  .headline {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px; line-height: 0.88;
+    letter-spacing: 0.04em; margin-bottom: 16px;
+  }
+  .headline .org { color: var(--orange); }
+  .sub {
+    font-size: 18px; color: var(--muted); font-weight: 400;
+    letter-spacing: 0.04em;
+  }
+
+  footer {
+    position: absolute; bottom: 40px; left: 0; right: 0;
+    text-align: center;
+    font-size: 12px; font-weight: 500;
+    letter-spacing: 0.2em; color: #25374f; text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<div class="circles">
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+</div>
+
+<div class="orb"></div>
+
+<div class="card">
+  <div class="pre-text">{{ pre_text }}</div>
+  <div class="headline">{{ headline_white }} <span class="org">{{ headline_orange }}</span></div>
+  <div class="sub">{{ subtitle }}</div>
+</div>
+
+<footer>www.porveniragenciadigital.com</footer>
+</body>
+</html>

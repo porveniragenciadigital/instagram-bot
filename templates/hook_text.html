@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --darkest: #051024;
+    --orange:  #ff7a48;
+    --muted:   #5a6a80;
+    --card:    rgba(255,255,255,0.04);
+    --border:  rgba(255,255,255,0.08);
+  }
+  html, body { width: 1080px; height: 1350px; overflow: hidden; }
+  body {
+    background-color: var(--darkest);
+    background-image:
+      radial-gradient(ellipse 700px 500px at 80% -5%, rgba(255,122,72,0.18) 0%, transparent 60%),
+      radial-gradient(ellipse 600px 450px at -10% 115%, rgba(16,55,120,0.28) 0%, transparent 65%);
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 88px 60px;
+    position: relative;
+  }
+
+  .tag {
+    display: flex; align-items: center; gap: 9px;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.13em;
+    color: #fff; text-transform: uppercase;
+    background: rgba(255,122,72,0.14);
+    border: 1px solid rgba(255,122,72,0.35);
+    border-radius: 100px; padding: 8px 20px;
+    margin-bottom: 36px;
+  }
+  .tag::before {
+    content: ''; width: 8px; height: 8px; border-radius: 50%;
+    background: var(--orange); box-shadow: 0 0 8px var(--orange);
+    flex-shrink: 0;
+  }
+
+  .headline {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 112px; line-height: 0.86;
+    text-align: center; letter-spacing: 0.02em;
+    margin-bottom: 52px;
+  }
+  .headline .org { color: var(--orange); }
+
+  .chat { width: 100%; display: flex; flex-direction: column; gap: 18px; margin-bottom: 40px; }
+
+  .bubble {
+    max-width: 82%; border-radius: 22px;
+    padding: 22px 28px;
+    font-size: 18px; line-height: 1.55; font-weight: 500;
+  }
+  .bubble .time {
+    display: block; font-size: 12px; font-weight: 400;
+    margin-top: 9px; opacity: 0.5;
+  }
+  .bubble.in {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.09);
+    align-self: flex-start; border-bottom-left-radius: 5px;
+  }
+  .bubble.out {
+    background: var(--orange);
+    align-self: flex-end; border-bottom-right-radius: 5px;
+  }
+  .bubble.out .time { opacity: 0.65; }
+
+  .cta-box {
+    width: 100%;
+    background: rgba(255,122,72,0.06);
+    border: 1px solid rgba(255,122,72,0.22);
+    border-radius: 20px; padding: 28px 36px; text-align: center;
+  }
+  .cta-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 46px; letter-spacing: 0.05em; color: #fff; margin-bottom: 8px;
+  }
+  .cta-sub { font-size: 17px; color: var(--orange); font-weight: 500; }
+
+  footer {
+    position: absolute; bottom: 36px; left: 0; right: 0;
+    text-align: center;
+    font-size: 12px; font-weight: 500;
+    letter-spacing: 0.2em; color: #25374f; text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<div class="tag">{{ tag }}</div>
+
+<div class="headline">
+  {{ headline_white }}<br><span class="org">{{ headline_orange }}</span>
+</div>
+
+<div class="chat">
+  {% for msg in chat_messages %}
+  <div class="bubble {{ 'in' if msg.type == 'incoming' else 'out' }}">
+    {{ msg.text }}
+    <span class="time">{{ msg.time }}</span>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="cta-box">
+  <div class="cta-title">{{ cta_text }}</div>
+  <div class="cta-sub">{{ cta_sub }}</div>
+</div>
+
+<footer>www.porveniragenciadigital.com</footer>
+</body>
+</html>
