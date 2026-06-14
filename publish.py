@@ -1,10 +1,9 @@
 """
 Reads current_post.json, generates a caption with Claude,
-and publishes the post to Instagram via the Graph API.
+and sends the post to Instagram via Make webhook.
 """
 import json
 import os
-import time
 from pathlib import Path
 
 import anthropic
@@ -71,53 +70,22 @@ def generate_caption(topic: dict) -> tuple[str, str]:
     return caption, hashtags
 
 
-def publish_to_instagram(image_url: str, caption: str, hashtags: str):
-    account_id = os.environ["INSTAGRAM_ACCOUNT_ID"]
-    token = os.environ["INSTAGRAM_ACCESS_TOKEN"]
+def send_to_make(image_url: str, caption: str, hashtags: str):
+    webhook_url = os.environ["MAKE_WEBHOOK_URL"]
     full_caption = f"{caption}\n.\n.\n.\n{hashtags}"
 
-    # Step 1: create media container
     r = requests.post(
-        f"https://graph.facebook.com/v19.0/{account_id}/media",
-        data={"image_url": image_url, "caption": full_caption, "access_token": token},
+        webhook_url,
+        json={"image_url": image_url, "caption": full_caption},
         timeout=30,
     )
     r.raise_for_status()
-    creation_id = r.json()["id"]
-    print(f"Container: {creation_id}")
-
-    # Step 2: wait for Instagram to process the image
-    for attempt in range(6):
-        time.sleep(5)
-        status_r = requests.get(
-            f"https://graph.facebook.com/v19.0/{creation_id}",
-            params={"fields": "status_code", "access_token": token},
-            timeout=15,
-        )
-        status = status_r.json().get("status_code", "")
-        print(f"  status: {status}")
-        if status == "FINISHED":
-            break
-        if status == "ERROR":
-            raise RuntimeError(f"Instagram container error: {status_r.json()}")
-    else:
-        raise TimeoutError("Container did not reach FINISHED state in time")
-
-    # Step 3: publish
-    p = requests.post(
-        f"https://graph.facebook.com/v19.0/{account_id}/media_publish",
-        data={"creation_id": creation_id, "access_token": token},
-        timeout=30,
-    )
-    p.raise_for_status()
-    post_id = p.json()["id"]
-    print(f"Published! Post ID: {post_id}")
-    return post_id
+    print(f"Make webhook OK: {r.status_code} — {r.text}")
 
 
 def main():
     current = json.loads((BASE_DIR / "current_post.json").read_text())
-    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    repo = os.environ.get("GITHUB_REPOSITORY", "porveniragenciadigital/instagram-bot")
     image_path = current["image_path"]
     image_url = f"https://raw.githubusercontent.com/{repo}/main/{image_path}"
     print(f"Image URL: {image_url}")
@@ -125,7 +93,7 @@ def main():
     caption, hashtags = generate_caption(current["topic"])
     print(f"\nCaption preview:\n{caption[:120]}...\n")
 
-    publish_to_instagram(image_url, caption, hashtags)
+    send_to_make(image_url, caption, hashtags)
 
 
 if __name__ == "__main__":
