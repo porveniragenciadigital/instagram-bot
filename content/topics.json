@@ -19,7 +19,7 @@
     "template": "mierc_avance",
     "caption_theme": "gemini_medicina",
     "data": {
-      "nombre": "GEMINI 2.0", "dia_badge": "Jueves · Avance técnico",
+      "nombre": "GEMINI 2.0", "dia_badge": "Viernes · Avance técnico",
       "tagline": "De Google · <strong>Supera a médicos humanos en diagnóstico</strong><br>El avance más sorprendente del año en IA clínica",
       "stats": [{"val": "91%", "lbl": "Precisión diagnóstico"}, {"val": "+85%", "lbl": "vs médico promedio"}, {"val": "1M", "lbl": "Tokens de contexto"}],
       "descripcion": "Gemini 2.0 Ultra logra <strong>91% de precisión diagnóstica</strong>, superando a médicos especialistas en estudios ciegos.",
@@ -35,7 +35,7 @@
     "template": "viern_herramienta",
     "caption_theme": "perplexity_pro",
     "data": {
-      "nombre_line1": "PERPLEXITY", "nombre_line2": "PRO",
+      "nombre_line1": "PERPLEXITY", "nombre_line2": "PRO", "dia_badge": "Sábado · Herramienta IA",
       "tagline": "El buscador que cita sus fuentes reales", "tagline_hl": "Google tiene un competidor serio por primera vez",
       "stats": [{"val": "+15M", "lbl": "Usuarios activos"}, {"val": "$20", "lbl": "Pro / mes"}, {"val": "#1", "lbl": "Alternativa a Google"}],
       "descripcion": "<strong>Busca, sintetiza y cita fuentes verificables</strong> en tiempo real. Sin alucinaciones ni datos desactualizados.",

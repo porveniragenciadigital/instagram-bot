@@ -47,7 +47,7 @@ body {
 
 <div class="hero">
   <div class="hero-glow"></div>
-  <div class="badge"><span class="badge-dot"></span>Viernes · Herramienta IA</div>
+  <div class="badge"><span class="badge-dot"></span>{{ dia_badge | default("Viernes · Herramienta IA") }}</div>
   <div class="tool-name">{{ nombre_line1 }}<br><span class="hl">{{ nombre_line2 }}</span></div>
   <div class="tagline">{{ tagline }}<br><strong>{{ tagline_hl }}</strong></div>
 </div>
