@@ -1,422 +1,442 @@
 [
   {
-    "template": "service_feature",
-    "caption_theme": "automatizacion_chatbots",
+    "template": "lunes_noticia",
+    "caption_theme": "gpt5_lanzamiento",
     "data": {
-      "tag": "IA & CHATBOTS",
-      "headline_white": "AUTOMATIZACIÓN",
-      "headline_orange": "& IA",
-      "icon": "bot",
-      "features": [
-        { "icon": "message-square", "title": "CHATBOTS 24/7", "subtitle": "WhatsApp, Telegram, redes y web." },
-        { "icon": "mic", "title": "AGENTES DE VOZ", "subtitle": "IA que habla y entiende a tus clientes." },
-        { "icon": "trending-up", "title": "MAS CONVERSION", "subtitle": "Convierte visitas en clientes automaticamente." }
-      ]
-    }
-  },
-  {
-    "template": "hook_text",
-    "caption_theme": "negocio_no_duerme",
-    "data": {
-      "tag": "ONLINE 24/7",
-      "headline_white": "TU NEGOCIO",
-      "headline_orange": "NO DUERME",
-      "chat_messages": [
-        { "type": "incoming", "text": "Hola, quiero informacion sobre vuestros servicios. Estais abiertos?", "time": "Domingo, 02:30 AM" },
-        { "type": "outgoing", "text": "Hola! Claro que si. Soy el asistente IA de Porvenir. Te interesa diseno web o automatizacion?", "time": "Leido al instante" }
+      "fuente": "OpenAI", "fuente_url": "openai.com", "ghost": "5",
+      "titulo_line1": "GPT-5", "titulo_line2": "YA EXISTE",
+      "lead": "<strong>Multimodal nativo, razonamiento avanzado y memoria.</strong> OpenAI acaba de lanzar el modelo más capaz de su historia. Lo cambia todo.",
+      "puntos": [
+        {"titulo": "Un modelo para texto, voz e imagen", "desc": "GPT-5 integra todas las modalidades de forma nativa, sin cambiar de modelo."},
+        {"titulo": "Razonamiento tipo o1 incluido", "desc": "Piensa antes de responder. Resuelve problemas complejos sin prompts especiales."},
+        {"titulo": "El mercado reacciona", "desc": "Anthropic, Google y Meta aceleran sus roadmaps. La guerra de modelos escala."}
       ],
-      "cta_text": "NO PIERDAS MAS VENTAS",
-      "cta_sub": "Automatiza tu atencion al cliente hoy."
+      "stats": [{"val": "1", "lbl": "Modelo"}, {"val": "∞", "lbl": "Modalidades"}, {"val": "#1", "lbl": "Benchmark"}],
+      "etiquetas": ["OpenAI", "Multimodal", "GPT-5", "Ya disponible"]
     }
   },
   {
-    "template": "service_feature",
-    "caption_theme": "diseno_web",
+    "template": "mierc_avance",
+    "caption_theme": "gemini_medicina",
     "data": {
-      "tag": "HTML5 / CSS",
-      "headline_white": "DISENO WEB",
-      "headline_orange": "ESTRATEGICO",
-      "icon": "layout-dashboard",
+      "nombre": "GEMINI 2.0",
+      "tagline": "De Google · <strong>Supera a médicos humanos</strong><br>El avance más sorprendente del año en IA médica",
+      "stats": [{"val": "91%", "lbl": "Precisión médica"}, {"val": "+85%", "lbl": "vs médico promedio"}, {"val": "1M", "lbl": "Tokens contexto"}],
+      "descripcion": "Gemini 2.0 Ultra obtiene <strong>91% de acierto en diagnósticos médicos complejos</strong>, superando la media de especialistas. Un antes y un después para la medicina.",
       "features": [
-        { "icon": "zap", "title": "ULTRA RAPIDO", "subtitle": "Carga instantanea para no perder visitas." },
-        { "icon": "smartphone", "title": "100% RESPONSIVE", "subtitle": "Perfecto en movil, tablet y escritorio." },
-        { "icon": "palette", "title": "DISENO PREMIUM", "subtitle": "Estetica moderna que eleva tu marca." }
-      ]
-    }
-  },
-  {
-    "template": "numbered_steps",
-    "caption_theme": "metodo_porvenir",
-    "data": {
-      "headline": "EL METODO",
-      "steps": [
-        { "number": "01", "title": "ANALISIS", "subtitle": "Estrategia & Datos" },
-        { "number": "02", "title": "DESARROLLO", "subtitle": "Codigo & Diseno IA" },
-        { "number": "03", "title": "ESCALADO", "subtitle": "Lanzamiento & Crecimiento" }
-      ]
-    }
-  },
-  {
-    "template": "service_feature",
-    "caption_theme": "ux_accesibilidad",
-    "data": {
-      "tag": "WCAG 2.1",
-      "headline_white": "UX &",
-      "headline_orange": "ACCESIBILIDAD",
-      "icon": "accessibility",
-      "features": [
-        { "icon": "search", "title": "AUDITORIAS HEURISTICAS", "subtitle": "Identificamos cada punto de friccion." },
-        { "icon": "circle-check", "title": "CUMPLIMIENTO LEGAL W3C", "subtitle": "Tu web, adaptada a la normativa vigente." },
-        { "icon": "users", "title": "EXPERIENCIA INCLUSIVA", "subtitle": "Diseno para el 100% de tus usuarios." }
-      ]
-    }
-  },
-  {
-    "template": "split_concept",
-    "caption_theme": "visibilidad_accesibilidad",
-    "data": {
-      "top_icon": "eye",
-      "top_label": "SEO",
-      "top_headline": "VISIBILIDAD",
-      "top_sub": "Que te encuentren.",
-      "bottom_icon": "accessibility",
-      "bottom_label": "WCAG",
-      "bottom_headline": "ACCESIBILIDAD",
-      "bottom_sub": "Que te usen."
-    }
-  },
-  {
-    "template": "service_feature",
-    "caption_theme": "agentes_voz",
-    "data": {
-      "tag": "LEY 10/2025",
-      "headline_white": "AGENTES",
-      "headline_orange": "TELEFONICOS IA",
-      "icon": "phone-call",
-      "features": [
-        { "icon": "clock", "title": "RESPUESTA EN 3 SEG", "subtitle": "Sin tiempos de espera, sin musica de cola." },
-        { "icon": "brain", "title": "95% RESOLUCION", "subtitle": "La mayoria de consultas, resueltas sin humano." },
-        { "icon": "shield-check", "title": "LEY 10/2025", "subtitle": "Cumplimiento legal desde el primer dia." }
-      ]
-    }
-  },
-  {
-    "template": "hook_text",
-    "caption_theme": "ley_10_2025",
-    "data": {
-      "tag": "OBLIGATORIO DIC. 2026",
-      "headline_white": "LA LEY OBLIGA",
-      "headline_orange": "A TU EMPRESA",
-      "chat_messages": [
-        { "type": "incoming", "text": "Sigo usando mi centralita de siempre. No tengo tiempo para cambiar nada.", "time": "Tu competencia, ahora mismo" },
-        { "type": "outgoing", "text": "La Ley 10/2025 exige atencion inmediata. Te lo montamos en dias, no en meses.", "time": "Porvenir" }
+        {"icono": "🏥", "titulo": "Diagnóstico diferencial automatizado", "desc": "Analiza síntomas, historial y pruebas para generar hipótesis ordenadas por probabilidad."},
+        {"icono": "🌍", "titulo": "Acceso a medicina experta para todos", "desc": "Países sin especialistas acceden a diagnóstico de calidad con un smartphone."},
+        {"icono": "⚡", "titulo": "Velocidad que salva vidas", "desc": "3 segundos vs 40 minutos. En urgencias, la diferencia es el pronóstico."}
       ],
-      "cta_text": "CUMPLE ANTES DE DICIEMBRE",
-      "cta_sub": "Consulta gratuita en el link de la bio."
+      "veredicto": "Veredicto: un antes y un después"
     }
   },
   {
-    "template": "service_feature",
-    "caption_theme": "apps_moviles",
+    "template": "viern_herramienta",
+    "caption_theme": "perplexity_pro",
     "data": {
-      "tag": "iOS & ANDROID",
-      "headline_white": "APPS MOVILES",
-      "headline_orange": "A MEDIDA",
-      "icon": "smartphone",
+      "nombre_line1": "PERPLEXITY", "nombre_line2": "PRO",
+      "tagline": "El buscador que cita sus fuentes", "tagline_hl": "Google tiene un competidor serio",
+      "stats": [{"val": "+15M", "lbl": "Usuarios activos"}, {"val": "$20", "lbl": "Pro / mes"}, {"val": "#1", "lbl": "vs Google AI"}],
+      "descripcion": "<strong>Busca, sintetiza y responde con referencias reales.</strong> Sin alucinaciones. Sin datos desactualizados. Una interfaz, todos los modelos.",
       "features": [
-        { "icon": "layers", "title": "NATIVAS E HIBRIDAS", "subtitle": "iOS y Android con una sola base de codigo." },
-        { "icon": "cpu", "title": "INGENIERIA REAL", "subtitle": "Sin plantillas. Arquitectura desde cero." },
-        { "icon": "rocket", "title": "PUBLICACION EN STORES", "subtitle": "App Store y Google Play. Nos encargamos." }
-      ]
+        {"icono": "🔗", "titulo": "Fuentes verificables en cada respuesta", "desc": "Cada respuesta lleva citas reales. Sin inventos, sin alucinaciones."},
+        {"icono": "⚡", "titulo": "Búsqueda en tiempo real", "desc": "Accede a noticias de hoy. Sin knowledge cutoffs ni datos desactualizados."},
+        {"icono": "🤖", "titulo": "Modo Pro multimodelo", "desc": "GPT-4, Claude y Gemini desde una sola interfaz. Elige el mejor para cada tarea."}
+      ],
+      "cta_url": "perplexity.ai"
+    }
+  },
+
+  {
+    "template": "lunes_noticia",
+    "caption_theme": "claude_sonnet_lanzamiento",
+    "data": {
+      "fuente": "Anthropic", "fuente_url": "anthropic.com", "ghost": "3",
+      "titulo_line1": "CLAUDE 3.5", "titulo_line2": "SONNET",
+      "lead": "<strong>El modelo que supera a GPT-4 en código y análisis.</strong> Anthropic vuelve a marcar el ritmo. Más rápido, más preciso, mismo precio.",
+      "puntos": [
+        {"titulo": "Número 1 en razonamiento y código", "desc": "Supera a todos los modelos frontier en SWE-bench y HumanEval."},
+        {"titulo": "Velocidad 2× vs Claude 3 Opus", "desc": "Rendimiento de nivel Opus a precio y velocidad de Sonnet."},
+        {"titulo": "Computer Use: controla tu PC", "desc": "Claude puede usar el ratón y teclado como un humano. Primera vez en la industria."}
+      ],
+      "stats": [{"val": "#1", "lbl": "Código"}, {"val": "2×", "lbl": "Más rápido"}, {"val": "200K", "lbl": "Tokens"}],
+      "etiquetas": ["Anthropic", "Claude", "Código IA", "Computer Use"]
     }
   },
   {
-    "template": "numbered_steps",
-    "caption_theme": "proceso_web",
+    "template": "mierc_avance",
+    "caption_theme": "alphafold3_proteinas",
     "data": {
-      "headline": "TU WEB EN 3 PASOS",
-      "steps": [
-        { "number": "01", "title": "ESTRATEGIA", "subtitle": "Objetivos, audiencia & competencia" },
-        { "number": "02", "title": "DISENO & CODIGO", "subtitle": "Pixel perfect, rapido y accesible" },
-        { "number": "03", "title": "LANZAMIENTO", "subtitle": "Publicacion, SEO y seguimiento" }
-      ]
-    }
-  },
-  {
-    "template": "split_concept",
-    "caption_theme": "codigo_diseno",
-    "data": {
-      "top_icon": "code-2",
-      "top_label": "INGENIERIA",
-      "top_headline": "CODIGO",
-      "top_sub": "Que funciona.",
-      "bottom_icon": "palette",
-      "bottom_label": "UX",
-      "bottom_headline": "DISENO",
-      "bottom_sub": "Que convierte."
-    }
-  },
-  {
-    "template": "service_feature",
-    "caption_theme": "formacion_ia",
-    "data": {
-      "tag": "FORMACION",
-      "headline_white": "IA PARA",
-      "headline_orange": "TU EQUIPO",
-      "icon": "graduation-cap",
+      "nombre": "ALPHAFOLD 3",
+      "tagline": "De DeepMind · <strong>Predice el origen de la vida</strong><br>El avance científico más importante de la década",
+      "stats": [{"val": ">200M", "lbl": "Proteínas mapeadas"}, {"val": "99%", "lbl": "Precisión estructural"}, {"val": "Nobel", "lbl": "Premio 2024"}],
+      "descripcion": "AlphaFold 3 predice la estructura de <strong>proteínas, ADN, ARN y moléculas</strong> con una precisión sin precedentes. Acelera el desarrollo de fármacos de años a días.",
       "features": [
-        { "icon": "book-open", "title": "TALLERES PRACTICOS", "subtitle": "Casos reales de tu sector, no teoria." },
-        { "icon": "users", "title": "PARA CUALQUIER NIVEL", "subtitle": "Desde directivos hasta operaciones." },
-        { "icon": "bar-chart-2", "title": "ROI MEDIBLE", "subtitle": "Horas ahorradas desde la primera semana." }
-      ]
-    }
-  },
-  {
-    "template": "hook_text",
-    "caption_theme": "sin_web_no_existes",
-    "data": {
-      "tag": "REALIDAD DIGITAL",
-      "headline_white": "SIN WEB",
-      "headline_orange": "NO EXISTES",
-      "chat_messages": [
-        { "type": "incoming", "text": "Busque vuestra empresa en Google y no os encontre. Al final contrate a la competencia.", "time": "Cliente perdido" },
-        { "type": "outgoing", "text": "Una web rapida y bien posicionada no es un gasto. Es tu mejor comercial.", "time": "Porvenir" }
+        {"icono": "💊", "titulo": "Descubrimiento de fármacos a velocidad IA", "desc": "Lo que tardaba 10 años ahora se hace en semanas. Antibióticos, vacunas, terapias."},
+        {"icono": "🔬", "titulo": "Más allá de las proteínas", "desc": "Por primera vez predice interacciones entre proteínas, ADN, ARN y ligandos juntos."},
+        {"icono": "🌱", "titulo": "Base de datos abierta para la ciencia", "desc": "200 millones de estructuras disponibles gratis para investigadores de todo el mundo."}
       ],
-      "cta_text": "EMPIEZA HOY",
-      "cta_sub": "Primera consulta gratuita en el link de la bio."
+      "veredicto": "Premio Nobel de Química 2024"
     }
   },
   {
-    "template": "numbered_steps",
-    "caption_theme": "proceso_chatbot",
+    "template": "viern_herramienta",
+    "caption_theme": "cursor_editor",
     "data": {
-      "headline": "TU CHATBOT EN 3 DIAS",
-      "steps": [
-        { "number": "01", "title": "BRIEFING", "subtitle": "Analizamos tus casos de uso reales" },
-        { "number": "02", "title": "INTEGRACION", "subtitle": "WhatsApp, web o donde estes" },
-        { "number": "03", "title": "EN PRODUCCION", "subtitle": "Atendiendo clientes desde el dia 1" }
-      ]
-    }
-  },
-  {
-    "template": "split_concept",
-    "caption_theme": "antes_despues_ia",
-    "data": {
-      "top_icon": "x-circle",
-      "top_label": "SIN IA",
-      "top_headline": "8 HORAS",
-      "top_sub": "Respondiendo lo mismo.",
-      "bottom_icon": "check-circle",
-      "bottom_label": "CON IA",
-      "bottom_headline": "AUTOMATICO",
-      "bottom_sub": "Tu tiempo, para lo que importa."
-    }
-  },
-  {
-    "template": "service_feature",
-    "caption_theme": "diseno_web_conversion",
-    "data": {
-      "tag": "CONVERSION WEB",
-      "headline_white": "WEBS QUE",
-      "headline_orange": "VENDEN",
-      "icon": "mouse-pointer-click",
+      "nombre_line1": "CURSOR", "nombre_line2": "AI EDITOR",
+      "tagline": "El editor de código que programa contigo", "tagline_hl": "ChatGPT dentro de tu editor",
+      "stats": [{"val": "+500K", "lbl": "Devs activos"}, {"val": "$20", "lbl": "Pro / mes"}, {"val": "10×", "lbl": "Velocidad código"}],
+      "descripcion": "<strong>Escribe, refactoriza y depura código con IA dentro de tu editor.</strong> Entiende todo tu repositorio. No es autocompletado: es un copiloto real.",
       "features": [
-        { "icon": "target", "title": "ARQUITECTURA DE CONVERSION", "subtitle": "Cada seccion empuja al usuario a actuar." },
-        { "icon": "search", "title": "SEO TECNICO", "subtitle": "Visibilidad organica desde el lanzamiento." },
-        { "icon": "shield", "title": "WCAG & LEGAL", "subtitle": "Accesibilidad y cumplimiento incluidos." }
-      ]
-    }
-  },
-  {
-    "template": "hook_text",
-    "caption_theme": "app_movil_negocio",
-    "data": {
-      "tag": "APPS MOVILES",
-      "headline_white": "TU NEGOCIO",
-      "headline_orange": "EN CADA BOLSILLO",
-      "chat_messages": [
-        { "type": "incoming", "text": "Necesito que mis clientes puedan pedir cita desde el movil sin llamar.", "time": "Hoy" },
-        { "type": "outgoing", "text": "En 4 semanas tienes tu app en App Store y Google Play. Sin plantillas, ingenieria real.", "time": "Porvenir" }
+        {"icono": "🧠", "titulo": "Comprende todo el codebase", "desc": "Indexa tu proyecto entero y responde preguntas sobre cualquier archivo o función."},
+        {"icono": "✏️", "titulo": "Edita con instrucciones en lenguaje natural", "desc": "Describe el cambio que quieres y Cursor lo aplica directamente en el código."},
+        {"icono": "🐛", "titulo": "Debug y tests automáticos", "desc": "Detecta bugs, sugiere correcciones y genera tests unitarios en segundos."}
       ],
-      "cta_text": "HABLEMOS DE TU APP",
-      "cta_sub": "Consulta gratuita en el link de la bio."
+      "cta_url": "cursor.sh"
+    }
+  },
+
+  {
+    "template": "lunes_noticia",
+    "caption_theme": "sora_video_ia",
+    "data": {
+      "fuente": "OpenAI", "fuente_url": "openai.com/sora", "ghost": "S",
+      "titulo_line1": "SORA:", "titulo_line2": "VÍDEO CON IA",
+      "lead": "<strong>Texto → vídeo cinematográfico de 60 segundos.</strong> OpenAI lanza el generador de vídeo más avanzado del mercado. Hollywood, toma nota.",
+      "puntos": [
+        {"titulo": "Hasta 60 segundos en 1080p", "desc": "Vídeos largos, coherentes y con calidad de producción desde un prompt de texto."},
+        {"titulo": "Física y movimiento realistas", "desc": "Comprende cómo se mueven los objetos, la luz y las personas en el mundo real."},
+        {"titulo": "Storyboards interactivos", "desc": "Los directores ya lo usan para previsualizar escenas antes de rodar."}
+      ],
+      "stats": [{"val": "60s", "lbl": "Máximo vídeo"}, {"val": "1080p", "lbl": "Resolución"}, {"val": "∞", "lbl": "Creatividad"}],
+      "etiquetas": ["OpenAI", "Sora", "Vídeo IA", "Creadores"]
     }
   },
   {
-    "template": "numbered_steps",
-    "caption_theme": "proceso_agente_voz",
+    "template": "mierc_avance",
+    "caption_theme": "ia_cancer_piel",
     "data": {
-      "headline": "AGENTE DE VOZ IA",
-      "steps": [
-        { "number": "01", "title": "CONFIGURACION", "subtitle": "Flujos, FAQs y tono de marca" },
-        { "number": "02", "title": "INTEGRACION", "subtitle": "Con tu centralita o desde cero" },
-        { "number": "03", "title": "OPERATIVO", "subtitle": "Respondiendo llamadas 24/7" }
-      ]
-    }
-  },
-  {
-    "template": "split_concept",
-    "caption_theme": "velocidad_estetica",
-    "data": {
-      "top_icon": "zap",
-      "top_label": "PERFORMANCE",
-      "top_headline": "VELOCIDAD",
-      "top_sub": "Que no pierde visitas.",
-      "bottom_icon": "sparkles",
-      "bottom_label": "BRANDING",
-      "bottom_headline": "ESTETICA",
-      "bottom_sub": "Que genera confianza."
-    }
-  },
-  {
-    "template": "service_feature",
-    "caption_theme": "auditoria_ux",
-    "data": {
-      "tag": "AUDITORIA UX",
-      "headline_white": "DONDE PIERDES",
-      "headline_orange": "CLIENTES",
-      "icon": "scan-search",
+      "nombre": "IA VS CÁNCER",
+      "tagline": "Google & Stanford · <strong>Detecta melanoma antes que el médico</strong><br>La IA que puede salvar millones de vidas",
+      "stats": [{"val": "96%", "lbl": "Precisión diagnóstico"}, {"val": "3 seg", "lbl": "Tiempo análisis"}, {"val": "27×", "lbl": "Más casos revisados"}],
+      "descripcion": "El modelo identifica melanoma con <strong>96% de precisión</strong>, superando a dermatólogos expertos en estudios ciegos. Una foto de móvil es suficiente.",
       "features": [
-        { "icon": "map", "title": "MAPA DE FRICCIONES", "subtitle": "Cada punto donde el usuario abandona." },
-        { "icon": "file-text", "title": "INFORME ACCIONABLE", "subtitle": "Prioridades claras, no teoria." },
-        { "icon": "trending-up", "title": "PLAN DE MEJORA", "subtitle": "Con estimacion de impacto en conversion." }
-      ]
-    }
-  },
-  {
-    "template": "infographic_steps",
-    "caption_theme": "identifica_el_dolor",
-    "data": {
-      "tag": "ANTES DE LA IA...",
-      "headline": "IDENTIFICA EL DOLOR",
-      "subtitle": "No puedes optimizar lo que no entiendes. Para implementar IA con exito, primero hay que encontrar los <strong>puntos de friccion</strong>.",
-      "steps": [
-        {
-          "number": "1.",
-          "icon": "clock",
-          "title": "DONDE PIERDES TIEMPO?",
-          "description": "Detectamos tareas repetitivas y manuales que drenan horas productivas de tu equipo cada semana."
-        },
-        {
-          "number": "2.",
-          "icon": "triangle-alert",
-          "title": "DONDE HAY ERRORES?",
-          "description": "Identificamos fallos humanos en procesos de datos o atencion que cuestan dinero y reputacion."
-        },
-        {
-          "number": "3.",
-          "icon": "layers",
-          "title": "QUE NO SE HACE?",
-          "description": "Localizamos proyectos estrategicos y rentables que siempre se posponen por falta de tiempo."
-        }
+        {"icono": "📱", "titulo": "Diagnóstico con foto de móvil", "desc": "Una foto de la lesión es suficiente. No hacen falta equipos médicos especializados."},
+        {"icono": "🌍", "titulo": "Acceso global a oncología de calidad", "desc": "Regiones sin dermatólogos ofrecen screening de nivel mundial a toda la población."},
+        {"icono": "⏱️", "titulo": "Detección temprana = supervivencia", "desc": "El melanoma detectado a tiempo tiene 99% de supervivencia. La IA acelera esa ventana."}
       ],
-      "result_tag": "DIAGNOSTICO PREVIO",
-      "result_headline": "NO AUTOMATICES EL CAOS",
-      "result_description": "La IA no hace milagros sobre el desorden. Primero <strong>auditamos</strong>, luego <strong>implementamos</strong>."
+      "veredicto": "Publicado en Nature Medicine"
     }
   },
   {
-    "template": "infographic_steps",
-    "caption_theme": "ecosistema_digital",
+    "template": "viern_herramienta",
+    "caption_theme": "gamma_presentaciones",
     "data": {
-      "tag": "METODO PORVENIR",
-      "headline": "ECOSISTEMA DIGITAL RENTABLE",
-      "subtitle": "Tres capas de ingenieria que se refuerzan entre si para convertir tu presencia digital en una <strong>maquina de captacion</strong>.",
-      "steps": [
-        {
-          "number": "1.",
-          "icon": "code-2",
-          "title": "INGENIERIA & WEB",
-          "description": "Codigo limpio y <strong>Diseno Responsive</strong>. Sin una base tecnica perfecta, no hay crecimiento posible."
-        },
-        {
-          "number": "2.",
-          "icon": "scan-face",
-          "title": "UX & ACCESIBILIDAD",
-          "description": "Eliminamos barreras. Tu web intuitiva y legalmente accesible para <strong>retener al 100% del trafico</strong>."
-        },
-        {
-          "number": "3.",
-          "icon": "bot",
-          "title": "AUTOMATIZACION IA",
-          "description": "<strong>Chatbots & Agentes de Voz</strong> que atienden, filtran y cierran ventas en automatico mientras duermes."
-        }
+      "nombre_line1": "GAMMA", "nombre_line2": "AI",
+      "tagline": "Presentaciones profesionales en 30 segundos", "tagline_hl": "Adiós al PowerPoint de 4 horas",
+      "stats": [{"val": "10M+", "lbl": "Usuarios"}, {"val": "30s", "lbl": "Para crear"}, {"val": "Free", "lbl": "Para empezar"}],
+      "descripcion": "<strong>Escribe un tema y Gamma genera una presentación completa, diseñada y lista.</strong> Texto, imágenes, gráficos y estructura narrativa. En segundos.",
+      "features": [
+        {"icono": "⚡", "titulo": "Generación completa desde un prompt", "desc": "Escribe el tema y Gamma crea slides, contenido, imágenes y diseño en 30 segundos."},
+        {"icono": "🎨", "titulo": "Diseño adaptativo inteligente", "desc": "Se adapta al contenido automáticamente. No hay que ajustar nada a mano."},
+        {"icono": "🔗", "titulo": "Comparte como web o exporta a PDF", "desc": "Presenta desde el navegador, descarga en PDF o exporta a PowerPoint directamente."}
       ],
-      "result_tag": "OBJETIVO DESBLOQUEADO",
-      "result_headline": "ESCALABILIDAD TOTAL",
-      "result_description": "Conversion al maximo, carga operativa al minimo, retencion de clientes <strong>a largo plazo</strong>."
+      "cta_url": "gamma.app"
+    }
+  },
+
+  {
+    "template": "lunes_noticia",
+    "caption_theme": "llama4_meta",
+    "data": {
+      "fuente": "Meta AI", "fuente_url": "ai.meta.com", "ghost": "4",
+      "titulo_line1": "LLAMA 4", "titulo_line2": "OPEN SOURCE",
+      "lead": "<strong>El modelo más potente de código abierto de la historia.</strong> Meta democratiza la IA. Cualquier empresa puede desplegar su propio GPT-4 gratis.",
+      "puntos": [
+        {"titulo": "Supera a GPT-4 en benchmarks clave", "desc": "Llama 4 Scout y Maverick lideran en razonamiento, código y multilingüe."},
+        {"titulo": "Gratis para uso comercial", "desc": "Empresas con menos de 700M de usuarios pueden usarlo sin pagar licencia."},
+        {"titulo": "Multimodal nativo: texto, imagen y vídeo", "desc": "El primer modelo open-source multimodal verdaderamente potente."}
+      ],
+      "stats": [{"val": "400B", "lbl": "Parámetros"}, {"val": "100%", "lbl": "Open source"}, {"val": "#1", "lbl": "Open models"}],
+      "etiquetas": ["Meta", "Llama 4", "Open Source", "Gratis"]
     }
   },
   {
-    "template": "comparison",
-    "caption_theme": "decisiones_hibridas",
+    "template": "mierc_avance",
+    "caption_theme": "ia_clima_huracanes",
     "data": {
-      "tag": "NUEVO PARADIGMA",
-      "headline": "DECISIONES HIBRIDAS",
-      "subtitle": "Lo mejor de dos mundos trabajando para ti.",
-      "left": {
-        "title": "HUMANO",
-        "icon": "fingerprint",
-        "points": ["Creatividad", "Empatia", "Vision Estrategica"]
-      },
-      "right": {
-        "title": "INTELIGENCIA ARTIFICIAL",
-        "icon": "cpu",
-        "points": ["Velocidad", "Analisis de Datos", "24/7 Disponible"]
-      },
-      "result_tag": "RESULTADO",
-      "result_headline": "SINERGIA TOTAL",
-      "result_description": "La IA procesa, tu decides. Una colaboracion que te hace <strong>mas rapido y mas preciso</strong>.",
-      "metrics": [
-        { "icon": "zap", "value": "10X", "label": "AGILIDAD" },
-        { "icon": "trending-up", "value": "MAX", "label": "RENTABILIDAD" }
-      ]
+      "nombre": "GRAPHCAST",
+      "tagline": "De DeepMind · <strong>Predice huracanes con 10 días de antelación</strong><br>La IA que supera a los supercomputadores meteorológicos",
+      "stats": [{"val": "10 días", "lbl": "Predicción"}, {"val": "90%", "lbl": "Precisión ruta"}, {"val": "1000×", "lbl": "Más rápida"}],
+      "descripcion": "GraphCast de DeepMind predice el tiempo global con <strong>más precisión que los supercomputadores meteorológicos</strong>, en segundos en lugar de horas.",
+      "features": [
+        {"icono": "🌀", "titulo": "Trayectorias de huracanes con 10 días vista", "desc": "Las autoridades tienen más tiempo para evacuar. Se salvan vidas con más antelación."},
+        {"icono": "🌡️", "titulo": "Temperatura global cada 6 horas", "desc": "740 variables atmosféricas en 37 capas de altura. Cobertura mundial completa."},
+        {"icono": "⚡", "titulo": "60 segundos vs 60 minutos", "desc": "Un pronóstico de 10 días en 60 segundos. Los supercomputadores necesitan una hora."}
+      ],
+      "veredicto": "Publicado en Science (2024)"
     }
   },
   {
-    "template": "orb_hero",
-    "caption_theme": "potencia_con_ia",
+    "template": "viern_herramienta",
+    "caption_theme": "elevenlabs_voz",
     "data": {
-      "pre_text": "POTENCIA TU NEGOCIO",
-      "headline_white": "CON",
-      "headline_orange": "IA",
-      "subtitle": "Automatizacion · Chatbots · Datos"
+      "nombre_line1": "ELEVEN", "nombre_line2": "LABS",
+      "tagline": "Voz humana generada con IA", "tagline_hl": "La herramienta de voz más realista del mundo",
+      "stats": [{"val": "1M+", "lbl": "Usuarios activos"}, {"val": "29", "lbl": "Idiomas"}, {"val": "1 min", "lbl": "Para clonar voz"}],
+      "descripcion": "<strong>Clona cualquier voz con 1 minuto de audio. Genera narración, doblaje y voz en off</strong> con calidad de estudio. Indistinguible del original.",
+      "features": [
+        {"icono": "🎙️", "titulo": "Clonación de voz instantánea", "desc": "Un minuto de audio es suficiente para replicar cualquier voz con fidelidad sorprendente."},
+        {"icono": "🌍", "titulo": "Doblaje automático en 29 idiomas", "desc": "Sube tu vídeo y obtén el doblaje en cualquier idioma manteniendo tu voz original."},
+        {"icono": "📻", "titulo": "Podcasts y audiolibros sin locutor", "desc": "Convierte artículos o libros en audio profesional sin contratar locutores."}
+      ],
+      "cta_url": "elevenlabs.io"
+    }
+  },
+
+  {
+    "template": "lunes_noticia",
+    "caption_theme": "gemini_google_search",
+    "data": {
+      "fuente": "Google", "fuente_url": "google.com", "ghost": "G",
+      "titulo_line1": "GOOGLE", "titulo_line2": "USA IA",
+      "lead": "<strong>Gemini llega a los resultados de búsqueda de Google.</strong> La web ya no es solo links. Es respuestas generadas. El SEO cambia para siempre.",
+      "puntos": [
+        {"titulo": "AI Overviews en cada búsqueda", "desc": "Respuestas directas de IA antes de los links. El 65% de usuarios no hace scroll."},
+        {"titulo": "El tráfico orgánico cae un 30%", "desc": "Los webs informativos pierden visitas. El contenido de valor gana más relevancia."},
+        {"titulo": "Nueva oportunidad: ser la fuente citada", "desc": "La IA cita webs de autoridad. Las marcas con expertise salen ganando."}
+      ],
+      "stats": [{"val": "8.5B", "lbl": "Búsquedas/día"}, {"val": "90%", "lbl": "Cuota mercado"}, {"val": "-30%", "lbl": "Tráfico orgánico"}],
+      "etiquetas": ["Google", "Gemini", "SEO", "Búsqueda IA"]
     }
   },
   {
-    "template": "orb_hero",
-    "caption_theme": "apps_en_tus_manos",
+    "template": "mierc_avance",
+    "caption_theme": "ia_musica_musicfx",
     "data": {
-      "pre_text": "INGENIERIA DE SOFTWARE",
-      "headline_white": "TU APP",
-      "headline_orange": "EN STORES",
-      "subtitle": "iOS · Android · Produccion"
+      "nombre": "IA MÚSICA",
+      "tagline": "De Google · <strong>Compone canciones desde una descripción</strong><br>El fin de las bibliotecas de música de stock",
+      "stats": [{"val": "30s", "lbl": "Para generar"}, {"val": "∞", "lbl": "Géneros musicales"}, {"val": "100%", "lbl": "Libre de derechos"}],
+      "descripcion": "MusicFX de Google genera <strong>música original de calidad profesional desde texto</strong>. Describe el mood, el género y los instrumentos. Lista en segundos.",
+      "features": [
+        {"icono": "🎵", "titulo": "Música para vídeos sin copyright", "desc": "Ideal para creadores, marcas y agencias. Genera el soundtrack exacto que necesitas."},
+        {"icono": "🎸", "titulo": "Control total de estilo e instrumentos", "desc": "Especifica el BPM, los instrumentos, el tempo y el mood con precisión."},
+        {"icono": "🔄", "titulo": "Variaciones infinitas del mismo tema", "desc": "Genera versiones alternativas hasta encontrar la perfecta. Sin costes adicionales."}
+      ],
+      "veredicto": "Integrado en Google Labs (gratuito)"
     }
   },
   {
-    "template": "comparison",
-    "caption_theme": "con_sin_chatbot",
+    "template": "viern_herramienta",
+    "caption_theme": "runway_gen3",
     "data": {
-      "tag": "COMPARATIVA",
-      "headline": "CON Y SIN CHATBOT",
-      "subtitle": "El mismo negocio. Resultado completamente diferente.",
-      "left": {
-        "title": "SIN IA",
-        "icon": "x-circle",
-        "points": ["8h respondiendo emails", "Clientes sin atencion 24/7", "Ventas perdidas por noche"]
-      },
-      "right": {
-        "title": "CON IA",
-        "icon": "bot",
-        "points": ["Respuesta en segundos", "Atencion automatica 24/7", "Leads cualificados solos"]
-      },
-      "result_tag": "RESULTADO REAL",
-      "result_headline": "MAS VENTAS, MENOS TRABAJO",
-      "result_description": "Tus clientes atendidos al instante. Tu, enfocada en <strong>lo que realmente importa</strong>.",
-      "metrics": [
-        { "icon": "clock", "value": "24/7", "label": "DISPONIBILIDAD" },
-        { "icon": "trending-up", "value": "95%", "label": "RESOLUCION" }
-      ]
+      "nombre_line1": "RUNWAY", "nombre_line2": "GEN-3",
+      "tagline": "Vídeo cinematográfico desde texto e imagen", "tagline_hl": "Hollywood accesible para cualquier creador",
+      "stats": [{"val": "10s", "lbl": "Vídeos máx."}, {"val": "768p", "lbl": "Resolución"}, {"val": "$12", "lbl": "Starter / mes"}],
+      "descripcion": "<strong>Genera vídeos cinematográficos de alta calidad desde texto o imagen.</strong> Control de cámara, iluminación y movimiento. Producción de nivel Hollywood desde el navegador.",
+      "features": [
+        {"icono": "🎬", "titulo": "Movimientos de cámara controlados", "desc": "Especifica zoom, travelling, perspectiva y velocidad de cámara con precisión."},
+        {"icono": "🖼️", "titulo": "Imagen a vídeo coherente", "desc": "Sube cualquier imagen y anímala con movimiento natural y consistente."},
+        {"icono": "✏️", "titulo": "Edición y rotoscopia automática", "desc": "Elimina fondos, cambia objetos y aplica efectos sin software de edición."}
+      ],
+      "cta_url": "runwayml.com"
+    }
+  },
+
+  {
+    "template": "lunes_noticia",
+    "caption_theme": "copilot_microsoft",
+    "data": {
+      "fuente": "Microsoft", "fuente_url": "microsoft.com/copilot", "ghost": "M",
+      "titulo_line1": "COPILOT", "titulo_line2": "EN TODO",
+      "lead": "<strong>Microsoft integra IA en Word, Excel, PowerPoint, Teams y Outlook.</strong> La suite más usada del mundo ya tiene cerebro propio.",
+      "puntos": [
+        {"titulo": "Word: redacta documentos enteros", "desc": "Describe lo que necesitas y Copilot redacta, resume y reformatea documentos."},
+        {"titulo": "Excel: analiza datos en castellano", "desc": "Pregunta sobre tus datos en lenguaje natural. Copilot crea fórmulas y gráficos."},
+        {"titulo": "Teams: resume reuniones automáticamente", "desc": "Transcribe, resume y extrae los puntos de acción de cualquier reunión."}
+      ],
+      "stats": [{"val": "1.2B", "lbl": "Usuarios Office"}, {"val": "$30", "lbl": "Usuario / mes"}, {"val": "10×", "lbl": "Productividad"}],
+      "etiquetas": ["Microsoft", "Copilot", "Office 365", "Productividad"]
+    }
+  },
+  {
+    "template": "mierc_avance",
+    "caption_theme": "robots_boston_dynamics",
+    "data": {
+      "nombre": "ROBOTS IA",
+      "tagline": "Boston Dynamics & OpenAI · <strong>Robots que razonan y aprenden solos</strong><br>La fusión de IA generativa y robótica física",
+      "stats": [{"val": "Figure 02", "lbl": "Nuevo modelo"}, {"val": "1.4m/s", "lbl": "Velocidad marcha"}, {"val": "20kg", "lbl": "Carga útil"}],
+      "descripcion": "Los robots Figure 02 con GPT-4V <strong>razonan, planifican y ejecutan tareas físicas</strong> siguiendo instrucciones en lenguaje natural. Ya trabajan en fábricas de BMW.",
+      "features": [
+        {"icono": "🤖", "titulo": "Instrucciones en lenguaje natural", "desc": "Dile al robot lo que quieres que haga. Entiende contexto y planifica su ejecución."},
+        {"icono": "👀", "titulo": "Visión y razonamiento espacial", "desc": "Identifica objetos, evalúa el entorno y adapta sus movimientos en tiempo real."},
+        {"icono": "🏭", "titulo": "Ya en líneas de producción reales", "desc": "BMW los usa en sus fábricas. Aprenden de los trabajadores humanos a su lado."}
+      ],
+      "veredicto": "Inversión: $675M en 2024"
+    }
+  },
+  {
+    "template": "viern_herramienta",
+    "caption_theme": "midjourney_v6",
+    "data": {
+      "nombre_line1": "MIDJOURNEY", "nombre_line2": "V6",
+      "tagline": "Imágenes fotorrealistas desde texto", "tagline_hl": "El generador de imágenes más usado del mundo",
+      "stats": [{"val": "16M+", "lbl": "Usuarios activos"}, {"val": "$10", "lbl": "Básico / mes"}, {"val": "∞", "lbl": "Estilos posibles"}],
+      "descripcion": "<strong>Genera imágenes de calidad profesional con Midjourney v6.</strong> Fotorrealismo, arte conceptual, diseño de producto. La calidad da un salto generacional.",
+      "features": [
+        {"icono": "📸", "titulo": "Fotorrealismo que engaña al ojo", "desc": "Las imágenes de MJ v6 superan el test visual. Imposible distinguirlas de fotos reales."},
+        {"icono": "✏️", "titulo": "Texto legible dentro de las imágenes", "desc": "Por primera vez, MJ genera texto coherente y legible integrado en las imágenes."},
+        {"icono": "🎨", "titulo": "Prompting conversacional", "desc": "Refina la imagen con instrucciones naturales. Describe qué cambiar y se aplica."}
+      ],
+      "cta_url": "midjourney.com"
+    }
+  },
+
+  {
+    "template": "lunes_noticia",
+    "caption_theme": "apple_intelligence",
+    "data": {
+      "fuente": "Apple", "fuente_url": "apple.com/intelligence", "ghost": "A",
+      "titulo_line1": "APPLE", "titulo_line2": "INTELLIGENCE",
+      "lead": "<strong>La IA de Apple llega al iPhone, iPad y Mac.</strong> Privacidad primero, potencia después. Siri deja de ser un chiste.",
+      "puntos": [
+        {"titulo": "IA que corre en tu dispositivo", "desc": "Procesa datos sin enviarlos a la nube. Tu información se queda en tu iPhone."},
+        {"titulo": "Escritura inteligente en todas las apps", "desc": "Redacta emails, resume notas y reformatea textos en cualquier app con un toque."},
+        {"titulo": "Siri con contexto y acciones reales", "desc": "Siri entiende el contexto de toda tu vida digital y puede actuar en cualquier app."}
+      ],
+      "stats": [{"val": "2.2B", "lbl": "Dispositivos Apple"}, {"val": "100%", "lbl": "Privacidad on-device"}, {"val": "iOS 18", "lbl": "Disponible en"}],
+      "etiquetas": ["Apple", "iPhone", "IA privada", "iOS 18"]
+    }
+  },
+  {
+    "template": "mierc_avance",
+    "caption_theme": "copilot_x_codigo",
+    "data": {
+      "nombre": "COPILOT X",
+      "tagline": "GitHub & OpenAI · <strong>El programador IA que trabaja contigo</strong><br>El mayor avance en productividad de software de la historia",
+      "stats": [{"val": "55%", "lbl": "Código generado"}, {"val": "46%", "lbl": "Más rápido"}, {"val": "1M+", "lbl": "Empresas usuarias"}],
+      "descripcion": "GitHub Copilot X genera <strong>más del 55% del código</strong> en proyectos activos. Los devs completan tareas un 46% más rápido. El ROI es inmediato.",
+      "features": [
+        {"icono": "💻", "titulo": "Completado de código en tiempo real", "desc": "Sugiere la siguiente línea, función o bloque entero. Funciona con 70+ lenguajes."},
+        {"icono": "💬", "titulo": "Chat dentro del IDE", "desc": "Pregunta sobre tu código, pide refactorizaciones y obtén explicaciones sin salir del editor."},
+        {"icono": "🔍", "titulo": "Pull requests revisadas por IA", "desc": "Copilot revisa tu PR, detecta bugs potenciales y sugiere mejoras antes del merge."}
+      ],
+      "veredicto": "Un dev con Copilot vale por dos"
+    }
+  },
+  {
+    "template": "viern_herramienta",
+    "caption_theme": "notion_ai",
+    "data": {
+      "nombre_line1": "NOTION", "nombre_line2": "AI",
+      "tagline": "Tu segundo cerebro ahora piensa por ti", "tagline_hl": "El workspace más popular del mundo con IA integrada",
+      "stats": [{"val": "30M+", "lbl": "Usuarios activos"}, {"val": "$10", "lbl": "IA add-on/mes"}, {"val": "∞", "lbl": "Productividad"}],
+      "descripcion": "<strong>Notion AI resume páginas, redacta documentos, traduce contenido y extrae tareas</strong> directamente desde tu workspace. Sin cambiar de app.",
+      "features": [
+        {"icono": "📝", "titulo": "Redacción y resumen automático", "desc": "Pide a Notion que escriba un documento, resuma una reunión o reformatee contenido."},
+        {"icono": "🔍", "titulo": "Búsqueda IA en todo tu workspace", "desc": "Pregunta sobre cualquier información que tengas en Notion. Te responde al instante."},
+        {"icono": "📋", "titulo": "Extrae tareas de notas de reunión", "desc": "Sube las notas y Notion AI extrae automáticamente los action items y decisiones."}
+      ],
+      "cta_url": "notion.so/ai"
+    }
+  },
+
+  {
+    "template": "lunes_noticia",
+    "caption_theme": "grok3_xai",
+    "data": {
+      "fuente": "xAI · Elon Musk", "fuente_url": "x.ai", "ghost": "X",
+      "titulo_line1": "GROK 3", "titulo_line2": "LLEGA FUERTE",
+      "lead": "<strong>xAI lanza el modelo que quiere destronar a GPT-4 y Claude.</strong> Elon Musk entra en la carrera de la IA con todo. Los benchmarks dan la razón.",
+      "puntos": [
+        {"titulo": "Número 1 en matemáticas y ciencia", "desc": "Supera a GPT-4o en MATH y GPQA. Entrenado con 100.000 GPUs Nvidia H100."},
+        {"titulo": "Think Mode: razonamiento extendido", "desc": "Modo de pensamiento profundo para problemas complejos. Similar al o1 de OpenAI."},
+        {"titulo": "Acceso a datos de X en tiempo real", "desc": "Tiene acceso privilegiado a los posts de X. Información actualizada al minuto."}
+      ],
+      "stats": [{"val": "100K", "lbl": "GPUs H100"}, {"val": "#1", "lbl": "MATH benchmark"}, {"val": "Real-time", "lbl": "Datos de X"}],
+      "etiquetas": ["xAI", "Grok 3", "Elon Musk", "Think Mode"]
+    }
+  },
+  {
+    "template": "mierc_avance",
+    "caption_theme": "waymo_coches_autonomos",
+    "data": {
+      "nombre": "WAYMO ONE",
+      "tagline": "De Google · <strong>Taxis sin conductor en 5 ciudades</strong><br>Los coches autónomos ya son una realidad comercial",
+      "stats": [{"val": "5M+", "lbl": "Viajes completados"}, {"val": "0", "lbl": "Conductores"}, {"val": "85%", "lbl": "Menos accidentes"}],
+      "descripcion": "Waymo One opera flota comercial en San Francisco, Los Ángeles, Phoenix y Austin. <strong>5 millones de viajes sin accidentes graves.</strong>",
+      "features": [
+        {"icono": "🚗", "titulo": "Sin conductor, sin volante, sin pedales", "desc": "El coche es 100% autónomo en ciudad. El pasajero solo indica el destino."},
+        {"icono": "📡", "titulo": "LiDAR + visión + radar fusionados", "desc": "29 sensores que perciben a 360° hasta 300 metros. Ve mejor que cualquier humano."},
+        {"icono": "📉", "titulo": "85% menos accidentes que humanos", "desc": "Datos reales de millones de km. La IA es estadísticamente más segura al volante."}
+      ],
+      "veredicto": "El futuro del transporte ya está aquí"
+    }
+  },
+  {
+    "template": "viern_herramienta",
+    "caption_theme": "descript_audio_video",
+    "data": {
+      "nombre_line1": "DESCRIPT", "nombre_line2": "AI",
+      "tagline": "Edita audio y vídeo como si fuera texto", "tagline_hl": "La herramienta que todo podcaster necesita",
+      "stats": [{"val": "500K+", "lbl": "Creadores activos"}, {"val": "1hr", "lbl": "= 10min edición"}, {"val": "$12", "lbl": "Creator / mes"}],
+      "descripcion": "<strong>Transcribe tu podcast o vídeo automáticamente y edita el audio borrando texto.</strong> Elimina silencios, muletillas y cortes en segundos.",
+      "features": [
+        {"icono": "✂️", "titulo": "Edita vídeo borrando palabras del texto", "desc": "La transcripción ES el timeline. Borra una frase del texto y el vídeo se corta solo."},
+        {"icono": "🗑️", "titulo": "Elimina muletillas y silencios automáticamente", "desc": "Detecta 'eeh', 'mmm' y pausas largas en un clic. Horas de trabajo en segundos."},
+        {"icono": "🎙️", "titulo": "Overdub: rellena cortes con tu voz", "desc": "¿Cometiste un error? Overdub genera tu voz clonada para rellenar el hueco sin regrabar."}
+      ],
+      "cta_url": "descript.com"
+    }
+  },
+
+  {
+    "template": "lunes_noticia",
+    "caption_theme": "gpt4o_multimodal",
+    "data": {
+      "fuente": "OpenAI", "fuente_url": "openai.com", "ghost": "O",
+      "titulo_line1": "GPT-4O:", "titulo_line2": "VE Y ESCUCHA",
+      "lead": "<strong>El primer modelo que habla, escucha, ve y razona en tiempo real.</strong> La conversación con la IA nunca volverá a ser lo mismo. Latencia: 232ms.",
+      "puntos": [
+        {"titulo": "Habla con latencia de 232 milisegundos", "desc": "Respuesta casi instantánea. Tan rápido como hablar con un humano por teléfono."},
+        {"titulo": "Ve tu pantalla y describe lo que ocurre", "desc": "Muéstrale código, un gráfico o una foto. Lo analiza y explica en tiempo real."},
+        {"titulo": "Detecta emociones por la voz", "desc": "Adapta su tono según si estás nervioso, contento o triste. Empatía artificial."}
+      ],
+      "stats": [{"val": "232ms", "lbl": "Latencia voz"}, {"val": "3×", "lbl": "Más rápido"}, {"val": "50%", "lbl": "Más barato"}],
+      "etiquetas": ["OpenAI", "GPT-4o", "Voz en tiempo real", "Multimodal"]
+    }
+  },
+  {
+    "template": "mierc_avance",
+    "caption_theme": "ia_educacion_khanmigo",
+    "data": {
+      "nombre": "KHANMIGO",
+      "tagline": "Khan Academy · <strong>El tutor IA que aprende con cada estudiante</strong><br>Educación personalizada para 150 millones de alumnos",
+      "stats": [{"val": "150M", "lbl": "Estudiantes potenciales"}, {"val": "100%", "lbl": "Personalización"}, {"val": "$9", "lbl": "Al mes / familia"}],
+      "descripcion": "Khanmigo nunca da la respuesta directamente: <strong>hace preguntas que llevan al alumno a descubrir la solución</strong>. Método socrático con paciencia infinita.",
+      "features": [
+        {"icono": "🧑‍🎓", "titulo": "Tutor personal 24/7 para cada alumno", "desc": "Adapta el ritmo, el nivel y el estilo de enseñanza a cada estudiante en tiempo real."},
+        {"icono": "❓", "titulo": "Método socrático: preguntas, no respuestas", "desc": "No hace los deberes: guía al estudiante para que llegue a la solución por sí mismo."},
+        {"icono": "📊", "titulo": "Informes para padres y profesores", "desc": "Los tutores ven exactamente dónde tiene dificultades cada alumno y qué le funciona."}
+      ],
+      "veredicto": "Bill Gates: 'El tutor del futuro ya existe'"
+    }
+  },
+  {
+    "template": "viern_herramienta",
+    "caption_theme": "kling_ai_video",
+    "data": {
+      "nombre_line1": "KLING", "nombre_line2": "AI",
+      "tagline": "El Sora chino que llegó antes que Sora", "tagline_hl": "Vídeos de 2 minutos con física perfecta",
+      "stats": [{"val": "2 min", "lbl": "Máximo vídeo"}, {"val": "1080p", "lbl": "Resolución"}, {"val": "Free", "lbl": "Para probar"}],
+      "descripcion": "<strong>Kling AI genera vídeos de hasta 2 minutos con física realista y coherencia temporal.</strong> Disponible globalmente desde el navegador. Sin instalar nada.",
+      "features": [
+        {"icono": "🎥", "titulo": "Vídeos de 2 minutos continuos", "desc": "El doble de duración que Sora. Con coherencia de movimiento y física creíble."},
+        {"icono": "🌊", "titulo": "Simulación física de fluidos y telas", "desc": "El agua salpica, la ropa se mueve, el cabello ondea. Física generativa avanzada."},
+        {"icono": "🖼️", "titulo": "Imagen a vídeo con movimiento libre", "desc": "Sube cualquier foto y dile cómo quieres que se mueva. Resultados en minutos."}
+      ],
+      "cta_url": "klingai.com"
     }
   }
 ]
