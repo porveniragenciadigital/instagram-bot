@@ -3,7 +3,7 @@
     "template": "lunes_noticia",
     "caption_theme": "gpt5_lanzamiento",
     "data": {
-      "fuente": "OpenAI", "fuente_url": "openai.com", "ghost": "5", "dia_badge": "Miércoles · Noticia IA",
+      "fuente": "OpenAI", "fuente_url": "openai.com", "ghost": "5", "dia_badge": "Jueves · Noticia IA",
       "titulo_line1": "GPT-5", "titulo_line2": "YA EXISTE",
       "lead": "<strong>Multimodal nativo, razonamiento avanzado y memoria persistente.</strong> OpenAI acaba de lanzar el modelo más capaz de su historia.",
       "puntos": [
@@ -52,7 +52,7 @@
     "template": "lunes_noticia",
     "caption_theme": "claude_sonnet_lanzamiento",
     "data": {
-      "fuente": "Anthropic", "fuente_url": "anthropic.com", "ghost": "3",
+      "fuente": "Anthropic", "fuente_url": "anthropic.com", "ghost": "3", "dia_badge": "Sábado · Noticia IA",
       "titulo_line1": "CLAUDE 3.5", "titulo_line2": "SONNET",
       "lead": "<strong>El modelo que supera a GPT-4 en código, análisis y razonamiento.</strong> Anthropic vuelve a marcar el ritmo con velocidad 2× y mismo precio.",
       "puntos": [
