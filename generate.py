@@ -52,6 +52,8 @@ def generate_image(html: str, output_path: Path):
         page.screenshot(
             path=str(output_path),
             clip={"x": 0, "y": 0, "width": 1080, "height": 1350},
+            type="jpeg",
+            quality=95,
         )
         browser.close()
 
@@ -67,7 +69,7 @@ def main():
     output_dir.mkdir(exist_ok=True)
 
     today = date.today().isoformat()
-    image_path = output_dir / f"post_{today}.png"
+    image_path = output_dir / f"post_{today}.jpg"
     generate_image(html, image_path)
 
     current_post = {

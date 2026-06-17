@@ -4,5 +4,6 @@ __pycache__/
 .venv/
 current_post.json
 output/concept_*.png
+output/concept_*.jpg
 .DS_Store
 .claude/
