@@ -44,7 +44,7 @@ body {
 
 <div class="hero">
   <div class="hero-glow"></div>
-  <div class="badge"><span class="badge-dot"></span>Miércoles · Avance técnico</div>
+  <div class="badge"><span class="badge-dot"></span>{{ dia_badge | default("Miércoles · Avance técnico") }}</div>
   <div class="tool-name">{{ nombre }}</div>
   <div class="tagline">{{ tagline }}</div>
 </div>

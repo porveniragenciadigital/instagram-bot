@@ -3,7 +3,7 @@
     "template": "lunes_noticia",
     "caption_theme": "gpt5_lanzamiento",
     "data": {
-      "fuente": "OpenAI", "fuente_url": "openai.com", "ghost": "5",
+      "fuente": "OpenAI", "fuente_url": "openai.com", "ghost": "5", "dia_badge": "Miércoles · Noticia IA",
       "titulo_line1": "GPT-5", "titulo_line2": "YA EXISTE",
       "lead": "<strong>Multimodal nativo, razonamiento avanzado y memoria persistente.</strong> OpenAI acaba de lanzar el modelo más capaz de su historia, integrando texto, voz e imagen en un único sistema que piensa antes de responder.",
       "puntos": [
@@ -19,7 +19,7 @@
     "template": "mierc_avance",
     "caption_theme": "gemini_medicina",
     "data": {
-      "nombre": "GEMINI 2.0",
+      "nombre": "GEMINI 2.0", "dia_badge": "Jueves · Avance técnico",
       "tagline": "De Google · <strong>Supera a médicos humanos en diagnóstico</strong><br>El avance más sorprendente del año en IA clínica",
       "stats": [{"val": "91%", "lbl": "Precisión diagnóstico"}, {"val": "+85%", "lbl": "vs médico promedio"}, {"val": "1M", "lbl": "Tokens de contexto"}],
       "descripcion": "Gemini 2.0 Ultra obtiene <strong>91% de acierto en diagnósticos médicos complejos</strong>, superando la media de especialistas en estudios ciegos. Procesa historial clínico completo, pruebas de imagen y síntomas al mismo tiempo, algo que ningún humano puede hacer con la misma velocidad y consistencia.",
