@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; font-family: 'Montserrat', sans-serif; }
+body {
+  background: #051024;
+  background-image:
+    radial-gradient(ellipse 700px 500px at 110% -5%, rgba(255,122,72,0.18) 0%, transparent 55%),
+    radial-gradient(ellipse 400px 350px at -10% 100%, rgba(16,55,120,0.12) 0%, transparent 60%);
+  display: flex;
+  flex-direction: column;
+}
+.header { padding: 52px 72px 0; flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; }
+.day-badge { display: flex; align-items: center; gap: 12px; }
+.day-line { width: 30px; height: 3px; background: #ff7a48; border-radius: 2px; }
+.day-text { font-size: 12px; font-weight: 800; letter-spacing: 0.22em; color: #ff7a48; text-transform: uppercase; }
+.brand-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.18em; color: rgba(255,255,255,0.15); text-transform: uppercase; }
+.hero { padding: 36px 72px 0; flex-shrink: 0; position: relative; }
+.hero-source { font-size: 13px; font-weight: 700; letter-spacing: 0.1em; color: rgba(255,122,72,0.65); text-transform: uppercase; margin-bottom: 12px; }
+.headline { font-size: 108px; font-weight: 800; line-height: 0.88; color: #fff; letter-spacing: -0.025em; text-transform: uppercase; }
+.headline .hl { color: #ff7a48; }
+.ghost { position: absolute; right: 40px; top: 40px; font-size: 280px; font-weight: 800; line-height: 1; color: transparent; -webkit-text-stroke: 1px rgba(255,122,72,0.05); user-select: none; pointer-events: none; letter-spacing: -0.04em; }
+.middle { flex: 1; padding: 0 72px; display: flex; flex-direction: column; gap: 22px; padding-top: 36px; padding-bottom: 28px; }
+.lead-box { background: rgba(255,122,72,0.06); border-left: 3px solid #ff7a48; border-radius: 0 14px 14px 0; padding: 22px 26px; flex-shrink: 0; }
+.lead-text { font-size: 19px; line-height: 1.6; color: rgba(255,255,255,0.5); font-weight: 400; }
+.lead-text strong { color: rgba(255,255,255,0.85); font-weight: 700; }
+.context-wrap { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+.context { height: 100%; display: flex; flex-direction: column; gap: 10px; }
+.ctx-row { flex: 1; display: flex; align-items: center; gap: 16px; padding: 18px 22px; background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.055); border-radius: 12px; }
+.ctx-num { font-size: 12px; font-weight: 800; color: rgba(255,122,72,0.45); letter-spacing: 0.08em; flex-shrink: 0; width: 26px; }
+.ctx-title { font-size: 15px; font-weight: 800; color: rgba(255,255,255,0.8); margin-bottom: 4px; letter-spacing: 0.01em; }
+.ctx-desc { font-size: 13px; color: rgba(255,255,255,0.32); line-height: 1.4; }
+.stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; flex-shrink: 0; }
+.stat { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.065); border-radius: 16px; padding: 22px 16px; text-align: center; }
+.stat-val { font-size: 50px; font-weight: 800; color: #ff7a48; line-height: 1; letter-spacing: -0.02em; }
+.stat-lbl { font-size: 11px; color: rgba(255,255,255,0.28); font-weight: 700; margin-top: 7px; text-transform: uppercase; letter-spacing: 0.1em; }
+.tags { display: flex; gap: 10px; flex-wrap: wrap; flex-shrink: 0; }
+.tag { font-size: 12px; font-weight: 700; letter-spacing: 0.06em; padding: 10px 20px; border-radius: 100px; text-transform: uppercase; }
+.tag.solid { background: #ff7a48; color: #fff; }
+.tag.outline { border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.3); }
+.footer { flex-shrink: 0; padding: 22px 72px 44px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); }
+.source { font-size: 12px; color: rgba(255,255,255,0.2); font-weight: 500; }
+.brand { font-size: 11px; font-weight: 800; letter-spacing: 0.16em; color: rgba(255,255,255,0.15); text-transform: uppercase; }
+</style></head><body>
+
+<div class="header">
+  <div class="day-badge"><div class="day-line"></div><div class="day-text">Lunes · Noticia IA</div></div>
+  <div class="brand-tag">Porvenir</div>
+</div>
+
+<div class="hero">
+  <div class="ghost">5</div>
+  <div class="hero-source">OpenAI</div>
+  <div class="headline">GPT-5<br>YA <span class="hl">EXISTE</span></div>
+</div>
+
+<div class="middle">
+  <div class="lead-box">
+    <p class="lead-text"><strong>Multimodal nativo, razonamiento avanzado y memoria.</strong> OpenAI acaba de lanzar el modelo más capaz de su historia. Lo cambia todo.</p>
+  </div>
+
+  <div class="context-wrap">
+    <div class="context">
+      <div class="ctx-row"><div class="ctx-num">01</div><div><div class="ctx-title">Un modelo para texto, voz e imagen</div><div class="ctx-desc">GPT-5 integra todas las modalidades de forma nativa, sin cambiar de modelo.</div></div></div>
+      <div class="ctx-row"><div class="ctx-num">02</div><div><div class="ctx-title">Razonamiento tipo o1 incluido</div><div class="ctx-desc">Piensa antes de responder. Resuelve problemas complejos sin prompts especiales.</div></div></div>
+      <div class="ctx-row"><div class="ctx-num">03</div><div><div class="ctx-title">El mercado reacciona</div><div class="ctx-desc">Anthropic, Google y Meta aceleran sus roadmaps. La guerra de modelos escala.</div></div></div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-val">1</div><div class="stat-lbl">Modelo</div></div>
+    <div class="stat"><div class="stat-val">∞</div><div class="stat-lbl">Modalidades</div></div>
+    <div class="stat"><div class="stat-val">#1</div><div class="stat-lbl">Benchmark</div></div>
+  </div>
+
+  <div class="tags">
+    <span class="tag solid">OpenAI</span>
+    <span class="tag outline">Multimodal</span>
+    <span class="tag outline">GPT-5</span>
+    <span class="tag outline">Ya disponible</span>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="source">Fuente · openai.com</div>
+  <div class="brand">porveniragenciadigital.com</div>
+</div>
+
+</body></html>

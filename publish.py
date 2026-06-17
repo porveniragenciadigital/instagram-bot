@@ -24,7 +24,9 @@ Voz de marca:
 - Primera persona o imperativa
 - Espanol de Espana
 - Sin em dash (—)
-- Maximo 2-3 emojis si encajan naturalmente
+- Usa 3-4 emojis distribuidos naturalmente en el texto
+- El emoji va SIEMPRE al final de la frase o linea, nunca al principio: "Texto clave 🚀" NO "🚀 Texto clave"
+- Nunca uses viñetas con punto (•) delante de emojis
 - Nunca describas la web como "emocional"
 - Los botones y CTAs van en primera persona o accion directa"""
 
@@ -70,9 +72,12 @@ def generate_caption(topic: dict) -> tuple[str, str]:
     return caption, hashtags
 
 
+CAPTION_FOOTER = "📲 porveniragenciadigital.com\n✉ teresa.rodriguez@porveniragenciadigital.com"
+
+
 def send_to_make(image_url: str, caption: str, hashtags: str):
     webhook_url = os.environ["MAKE_WEBHOOK_URL"]
-    full_caption = f"{caption}\n.\n.\n.\n{hashtags}"
+    full_caption = f"{caption}\n.\n{CAPTION_FOOTER}\n.\n.\n.\n{hashtags}"
 
     r = requests.post(
         webhook_url,

@@ -11,6 +11,8 @@ body {
     radial-gradient(ellipse 400px 350px at -10% 110%, rgba(5,147,162,0.06) 0%, transparent 60%);
   display: flex; flex-direction: column;
 }
+
+/* HERO */
 .hero {
   background: linear-gradient(150deg, #051c22 0%, #04141a 50%, #051024 100%);
   padding: 56px 72px 50px; flex-shrink: 0; position: relative; overflow: hidden;
@@ -22,68 +24,70 @@ body {
 .tool-name { font-size: 100px; font-weight: 800; line-height: 0.88; color: #fff; letter-spacing: -0.03em; text-transform: uppercase; position: relative; z-index: 2; margin-bottom: 20px; }
 .tagline { font-size: 20px; font-weight: 500; color: rgba(5,147,162,0.6); position: relative; z-index: 2; line-height: 1.5; }
 .tagline strong { color: #0593a2; font-weight: 800; }
+
+/* CONTENT — flex column, features grow */
 .content { flex: 1; padding: 36px 72px 0; display: flex; flex-direction: column; gap: 28px; }
 .section-label { font-size: 10px; font-weight: 800; letter-spacing: 0.22em; color: #0593a2; text-transform: uppercase; margin-bottom: 14px; }
+
+/* STATS */
 .stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; flex-shrink: 0; }
 .stat-card { background: rgba(5,147,162,0.07); border: 1px solid rgba(5,147,162,0.18); border-radius: 16px; padding: 26px 14px; text-align: center; }
 .stat-val { font-size: 54px; font-weight: 800; color: #0593a2; line-height: 1; letter-spacing: -0.02em; }
 .stat-lbl { font-size: 11px; color: rgba(5,147,162,0.45); font-weight: 700; margin-top: 7px; text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* DESC */
 .desc-box { background: rgba(5,147,162,0.06); border: 1px solid rgba(5,147,162,0.15); border-radius: 14px; padding: 24px 26px; flex-shrink: 0; }
-.desc-text { font-size: 20px; line-height: 1.6; color: rgba(255,255,255,0.42); }
+.desc-text { font-size: 17px; line-height: 1.65; color: rgba(255,255,255,0.42); }
 .desc-text strong { color: rgba(255,255,255,0.82); font-weight: 700; }
+
+/* FEATURES — flex: 1 so they fill remaining space */
 .features-wrap { flex: 1; display: flex; flex-direction: column; min-height: 0; }
 .features { height: 100%; display: flex; flex-direction: column; gap: 10px; }
 .feat { flex: 1; display: flex; align-items: center; gap: 18px; background: rgba(5,147,162,0.04); border: 1px solid rgba(5,147,162,0.1); border-radius: 14px; padding: 20px 22px; }
 .feat-icon { font-size: 22px; flex-shrink: 0; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: rgba(5,147,162,0.1); border-radius: 12px; }
-.feat-title { font-size: 17px; font-weight: 800; color: rgba(255,255,255,0.78); margin-bottom: 5px; }
-.feat-desc { font-size: 16px; color: rgba(255,255,255,0.3); line-height: 1.5; }
-.footer { flex-shrink: 0; padding: 16px 72px 32px; display: flex; flex-direction: column; gap: 10px; border-top: 1px solid rgba(5,147,162,0.12); margin-top: 28px; }
-.footer-row { display: flex; justify-content: space-between; align-items: center; }
+.feat-title { font-size: 15px; font-weight: 800; color: rgba(255,255,255,0.78); margin-bottom: 5px; }
+.feat-desc { font-size: 13px; color: rgba(255,255,255,0.3); line-height: 1.5; }
+
+/* FOOTER */
+.footer { flex-shrink: 0; padding: 22px 72px 42px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(5,147,162,0.12); margin-top: 28px; }
 .verdict { font-size: 13px; font-weight: 800; color: #0593a2; letter-spacing: 0.04em; text-transform: uppercase; }
 .brand { font-size: 11px; font-weight: 800; letter-spacing: 0.16em; color: rgba(5,147,162,0.25); text-transform: uppercase; }
-.footer-cta { font-size: 13px; color: rgba(255,255,255,0.18); font-weight: 600; text-align: center; letter-spacing: 0.03em; }
 </style></head><body>
 
 <div class="hero">
   <div class="hero-glow"></div>
-  <div class="badge"><span class="badge-dot"></span>{{ dia_badge | default("Miércoles · Avance técnico") }}</div>
-  <div class="tool-name">{{ nombre }}</div>
-  <div class="tagline">{{ tagline }}</div>
+  <div class="badge"><span class="badge-dot"></span>Miércoles · Avance técnico</div>
+  <div class="tool-name">GEMINI 2.0</div>
+  <div class="tagline">De Google · <strong>Supera a médicos humanos</strong><br>El avance más sorprendente del año en IA médica</div>
 </div>
 
 <div class="content">
   <div>
     <div class="section-label">Cifras clave</div>
     <div class="stats">
-      {% for s in stats %}
-      <div class="stat-card"><div class="stat-val">{{ s.val }}</div><div class="stat-lbl">{{ s.lbl }}</div></div>
-      {% endfor %}
+      <div class="stat-card"><div class="stat-val">91%</div><div class="stat-lbl">Precisión médica</div></div>
+      <div class="stat-card"><div class="stat-val">+85%</div><div class="stat-lbl">vs médico promedio</div></div>
+      <div class="stat-card"><div class="stat-val">1M</div><div class="stat-lbl">Tokens contexto</div></div>
     </div>
   </div>
 
   <div class="desc-box">
-    <p class="desc-text">{{ descripcion }}</p>
+    <p class="desc-text">Gemini 2.0 Ultra obtiene <strong>91% de acierto en diagnósticos médicos complejos</strong>, superando la media de especialistas. ¿El fin del diagnóstico humano como único estándar?</p>
   </div>
 
   <div class="features-wrap">
     <div class="section-label">Por qué importa</div>
     <div class="features">
-      {% for f in features %}
-      <div class="feat">
-        <div class="feat-icon">{{ f.icono }}</div>
-        <div><div class="feat-title">{{ f.titulo }}</div><div class="feat-desc">{{ f.desc }}</div></div>
-      </div>
-      {% endfor %}
+      <div class="feat"><div class="feat-icon">🏥</div><div><div class="feat-title">Diagnóstico diferencial automatizado</div><div class="feat-desc">Analiza síntomas, historial y pruebas para generar hipótesis ordenadas por probabilidad.</div></div></div>
+      <div class="feat"><div class="feat-icon">🌍</div><div><div class="feat-title">Acceso a medicina experta para todos</div><div class="feat-desc">Países sin especialistas acceden a diagnóstico de calidad con un smartphone.</div></div></div>
+      <div class="feat"><div class="feat-icon">⚡</div><div><div class="feat-title">Velocidad que salva vidas</div><div class="feat-desc">3 segundos vs 40 minutos. En urgencias, la diferencia es el pronóstico.</div></div></div>
     </div>
   </div>
 </div>
 
 <div class="footer">
-  <div class="footer-row">
-    <div class="verdict">{{ veredicto }}</div>
-    <div class="brand">Porvenir</div>
-  </div>
-  <div class="footer-cta">📲 porveniragenciadigital.com &nbsp;·&nbsp; ✉ teresa.rodriguez@porveniragenciadigital.com</div>
+  <div class="verdict">Veredicto: un antes y un después</div>
+  <div class="brand">porveniragenciadigital.com</div>
 </div>
 
 </body></html>

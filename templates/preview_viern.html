@@ -11,6 +11,8 @@ body {
     radial-gradient(ellipse 400px 350px at -10% 110%, rgba(16,55,120,0.08) 0%, transparent 60%);
   display: flex; flex-direction: column;
 }
+
+/* HERO */
 .hero {
   background: linear-gradient(150deg, #071428 0%, #060e20 50%, #051024 100%);
   padding: 56px 72px 50px; flex-shrink: 0; position: relative; overflow: hidden;
@@ -23,68 +25,70 @@ body {
 .tool-name .hl { color: #5080c8; }
 .tagline { font-size: 20px; font-weight: 500; color: rgba(80,128,200,0.6); position: relative; z-index: 2; line-height: 1.5; }
 .tagline strong { color: #5080c8; font-weight: 800; }
+
+/* CONTENT */
 .content { flex: 1; padding: 36px 72px 0; display: flex; flex-direction: column; gap: 28px; }
 .section-label { font-size: 10px; font-weight: 800; letter-spacing: 0.22em; color: #5080c8; text-transform: uppercase; margin-bottom: 14px; }
+
+/* STATS */
 .stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; flex-shrink: 0; }
 .stat-card { background: rgba(16,55,120,0.12); border: 1px solid rgba(16,55,120,0.3); border-radius: 16px; padding: 26px 14px; text-align: center; }
 .stat-val { font-size: 54px; font-weight: 800; color: #5080c8; line-height: 1; letter-spacing: -0.02em; }
 .stat-lbl { font-size: 11px; color: rgba(80,128,200,0.45); font-weight: 700; margin-top: 7px; text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* DESC */
 .desc-box { background: rgba(16,55,120,0.1); border: 1px solid rgba(16,55,120,0.25); border-radius: 14px; padding: 24px 26px; flex-shrink: 0; }
-.desc-text { font-size: 20px; line-height: 1.6; color: rgba(255,255,255,0.42); }
+.desc-text { font-size: 17px; line-height: 1.65; color: rgba(255,255,255,0.42); }
 .desc-text strong { color: rgba(255,255,255,0.82); font-weight: 700; }
+
+/* FEATURES — flex: 1 to fill remaining space */
 .features-wrap { flex: 1; display: flex; flex-direction: column; min-height: 0; }
 .features { height: 100%; display: flex; flex-direction: column; gap: 10px; }
 .feat { flex: 1; display: flex; align-items: center; gap: 18px; background: rgba(16,55,120,0.06); border: 1px solid rgba(16,55,120,0.18); border-radius: 14px; padding: 20px 22px; }
 .feat-icon { font-size: 22px; flex-shrink: 0; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: rgba(16,55,120,0.18); border-radius: 12px; }
-.feat-title { font-size: 17px; font-weight: 800; color: rgba(255,255,255,0.78); margin-bottom: 5px; }
-.feat-desc { font-size: 16px; color: rgba(255,255,255,0.3); line-height: 1.5; }
-.footer { flex-shrink: 0; padding: 16px 72px 32px; display: flex; flex-direction: column; gap: 10px; border-top: 1px solid rgba(16,55,120,0.25); margin-top: 28px; }
-.footer-row { display: flex; justify-content: space-between; align-items: center; }
+.feat-title { font-size: 15px; font-weight: 800; color: rgba(255,255,255,0.78); margin-bottom: 5px; }
+.feat-desc { font-size: 13px; color: rgba(255,255,255,0.3); line-height: 1.5; }
+
+/* FOOTER */
+.footer { flex-shrink: 0; padding: 22px 72px 42px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(16,55,120,0.25); margin-top: 28px; }
 .cta { font-size: 13px; font-weight: 800; color: #5080c8; letter-spacing: 0.04em; text-transform: uppercase; }
 .brand { font-size: 11px; font-weight: 800; letter-spacing: 0.16em; color: rgba(80,128,200,0.25); text-transform: uppercase; }
-.footer-cta { font-size: 13px; color: rgba(255,255,255,0.18); font-weight: 600; text-align: center; letter-spacing: 0.03em; }
 </style></head><body>
 
 <div class="hero">
   <div class="hero-glow"></div>
   <div class="badge"><span class="badge-dot"></span>Viernes · Herramienta IA</div>
-  <div class="tool-name">{{ nombre_line1 }}<br><span class="hl">{{ nombre_line2 }}</span></div>
-  <div class="tagline">{{ tagline }}<br><strong>{{ tagline_hl }}</strong></div>
+  <div class="tool-name">PERPLEXITY<br><span class="hl">PRO</span></div>
+  <div class="tagline">El buscador que cita sus fuentes<br><strong>Google tiene un competidor serio</strong></div>
 </div>
 
 <div class="content">
   <div>
     <div class="section-label">Por qué destaca</div>
     <div class="stats">
-      {% for s in stats %}
-      <div class="stat-card"><div class="stat-val">{{ s.val }}</div><div class="stat-lbl">{{ s.lbl }}</div></div>
-      {% endfor %}
+      <div class="stat-card"><div class="stat-val">+15M</div><div class="stat-lbl">Usuarios activos</div></div>
+      <div class="stat-card"><div class="stat-val">$20</div><div class="stat-lbl">Pro / mes</div></div>
+      <div class="stat-card"><div class="stat-val">#1</div><div class="stat-lbl">vs Google</div></div>
     </div>
   </div>
 
   <div class="desc-box">
-    <p class="desc-text">{{ descripcion }}</p>
+    <p class="desc-text"><strong>Busca, sintetiza y responde con referencias reales.</strong> Sin alucinaciones. Sin datos desactualizados. Una interfaz, todos los modelos.</p>
   </div>
 
   <div class="features-wrap">
     <div class="section-label">Funciones clave</div>
     <div class="features">
-      {% for f in features %}
-      <div class="feat">
-        <div class="feat-icon">{{ f.icono }}</div>
-        <div><div class="feat-title">{{ f.titulo }}</div><div class="feat-desc">{{ f.desc }}</div></div>
-      </div>
-      {% endfor %}
+      <div class="feat"><div class="feat-icon">🔗</div><div><div class="feat-title">Fuentes verificables en cada respuesta</div><div class="feat-desc">Cada respuesta lleva citas reales. Sin inventos, sin alucinaciones.</div></div></div>
+      <div class="feat"><div class="feat-icon">⚡</div><div><div class="feat-title">Búsqueda en tiempo real</div><div class="feat-desc">Accede a noticias de hoy. No hay datos desactualizados ni knowledge cutoffs.</div></div></div>
+      <div class="feat"><div class="feat-icon">🤖</div><div><div class="feat-title">Modo Pro multimodelo</div><div class="feat-desc">GPT-4, Claude y Gemini desde una sola interfaz. Elige el mejor para cada tarea.</div></div></div>
     </div>
   </div>
 </div>
 
 <div class="footer">
-  <div class="footer-row">
-    <div class="cta">Pruébalo → {{ cta_url }}</div>
-    <div class="brand">Porvenir</div>
-  </div>
-  <div class="footer-cta">📲 porveniragenciadigital.com &nbsp;·&nbsp; ✉ teresa.rodriguez@porveniragenciadigital.com</div>
+  <div class="cta">Pruébalo → perplexity.ai</div>
+  <div class="brand">porveniragenciadigital.com</div>
 </div>
 
 </body></html>

@@ -71,7 +71,7 @@ body {
   padding: 22px 26px;
   flex-shrink: 0;
 }
-.lead-text { font-size: 19px; line-height: 1.6; color: rgba(255,255,255,0.5); font-weight: 400; }
+.lead-text { font-size: 21px; line-height: 1.6; color: rgba(255,255,255,0.5); font-weight: 400; }
 .lead-text strong { color: rgba(255,255,255,0.85); font-weight: 700; }
 
 /* CONTEXT ROWS — flex: 1 so they fill remaining height */
@@ -88,8 +88,8 @@ body {
   border-radius: 12px;
 }
 .ctx-num { font-size: 12px; font-weight: 800; color: rgba(255,122,72,0.45); letter-spacing: 0.08em; flex-shrink: 0; width: 26px; }
-.ctx-title { font-size: 15px; font-weight: 800; color: rgba(255,255,255,0.8); margin-bottom: 4px; letter-spacing: 0.01em; }
-.ctx-desc { font-size: 13px; color: rgba(255,255,255,0.32); line-height: 1.4; }
+.ctx-title { font-size: 17px; font-weight: 800; color: rgba(255,255,255,0.8); margin-bottom: 4px; letter-spacing: 0.01em; }
+.ctx-desc { font-size: 16px; color: rgba(255,255,255,0.32); line-height: 1.4; }
 
 /* STATS */
 .stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; flex-shrink: 0; }
@@ -112,14 +112,16 @@ body {
 /* FOOTER */
 .footer {
   flex-shrink: 0;
-  padding: 22px 72px 44px;
+  padding: 16px 72px 32px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
   border-top: 1px solid rgba(255,255,255,0.05);
 }
+.footer-row { display: flex; justify-content: space-between; align-items: center; }
 .source { font-size: 12px; color: rgba(255,255,255,0.2); font-weight: 500; }
 .brand { font-size: 11px; font-weight: 800; letter-spacing: 0.16em; color: rgba(255,255,255,0.15); text-transform: uppercase; }
+.footer-cta { font-size: 13px; color: rgba(255,255,255,0.18); font-weight: 600; text-align: center; letter-spacing: 0.03em; }
 </style></head><body>
 
 <div class="header">
@@ -172,8 +174,11 @@ body {
 </div>
 
 <div class="footer">
-  <div class="source">Fuente · {{ fuente_url }}</div>
-  <div class="brand">porveniragenciadigital.com</div>
+  <div class="footer-row">
+    <div class="source">Fuente · {{ fuente_url }}</div>
+    <div class="brand">Porvenir</div>
+  </div>
+  <div class="footer-cta">📲 porveniragenciadigital.com &nbsp;·&nbsp; ✉ teresa.rodriguez@porveniragenciadigital.com</div>
 </div>
 
 </body></html>
