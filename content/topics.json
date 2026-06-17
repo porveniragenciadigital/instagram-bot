@@ -5,14 +5,14 @@
     "data": {
       "fuente": "OpenAI", "fuente_url": "openai.com", "ghost": "5", "dia_badge": "Jueves · Noticia IA",
       "titulo_line1": "GPT-5", "titulo_line2": "YA EXISTE",
-      "lead": "<strong>Multimodal nativo, razonamiento avanzado y memoria persistente.</strong> OpenAI acaba de lanzar el modelo más capaz de su historia.",
+      "lead": "<strong>Texto, voz e imagen en un solo modelo.</strong> OpenAI lanza su IA más capaz: razonamiento avanzado disponible para todos.",
       "puntos": [
-        {"titulo": "Un modelo para texto, voz e imagen", "desc": "GPT-5 integra todas las modalidades de forma nativa, sin cambiar de modelo ni de API."},
-        {"titulo": "Razonamiento tipo o1 incluido de serie", "desc": "Piensa antes de responder: resuelve problemas complejos sin prompts especiales ni trucos."},
-        {"titulo": "El mercado reacciona de inmediato", "desc": "Anthropic, Google y Meta aceleran sus roadmaps. La competencia beneficia a las empresas."}
+        {"titulo": "Razonamiento incluido de serie", "desc": "Piensa antes de responder, sin activar nada extra."},
+        {"titulo": "Multimodal nativo real", "desc": "Analiza fotos, audio y texto en la misma sesión."},
+        {"titulo": "Nivel experto en 40 profesiones", "desc": "Supera a especialistas en código, derecho e ingeniería."}
       ],
-      "stats": [{"val": "1", "lbl": "Modelo unificado"}, {"val": "∞", "lbl": "Modalidades"}, {"val": "#1", "lbl": "Benchmark global"}],
-      "etiquetas": ["OpenAI", "Multimodal", "GPT-5", "Ya disponible"]
+      "stats": [{"val": "94%", "lbl": "AIME 2025"}, {"val": "45%", "lbl": "Menos errores"}, {"val": "#1", "lbl": "Benchmark global"}],
+      "etiquetas": ["OpenAI", "GPT-5", "Ya disponible"]
     }
   },
   {
