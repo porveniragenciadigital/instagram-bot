@@ -25,7 +25,8 @@ Voz de marca:
 - Espanol de Espana
 - Sin em dash (—)
 - Usa 3-4 emojis distribuidos naturalmente en el texto
-- El emoji va SIEMPRE al final de la frase o linea, nunca al principio: "Texto clave 🚀" NO "🚀 Texto clave"
+- El emoji va SIEMPRE al final de la frase, pegado a la ultima palabra con un espacio: "ultima palabra 🚀" — sin punto, coma ni ningun signo de puntuacion antes del emoji
+- Formato correcto: "Reserva en el link de la bio 🚀" — Formato INCORRECTO: "Reserva en el link de la bio. 🚀" o "🚀 Reserva en el link"
 - Nunca uses viñetas con punto (•) delante de emojis
 - Nunca describas la web como "emocional"
 - Los botones y CTAs van en primera persona o accion directa"""
