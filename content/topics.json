@@ -52,7 +52,7 @@
     "template": "lunes_noticia",
     "caption_theme": "claude_sonnet_lanzamiento",
     "data": {
-      "fuente": "Anthropic", "fuente_url": "anthropic.com", "ghost": "3", "dia_badge": "Sábado · Noticia IA",
+      "fuente": "Anthropic", "fuente_url": "anthropic.com", "ghost": "3", "dia_badge": "Lunes · Noticia IA",
       "titulo_line1": "CLAUDE 3.5", "titulo_line2": "SONNET",
       "lead": "<strong>Supera a GPT-4 en código y razonamiento.</strong> Mismo precio, velocidad 2× y 200K tokens de contexto.",
       "puntos": [
