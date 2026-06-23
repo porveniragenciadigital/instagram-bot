@@ -1,10 +1,7 @@
 name: Publicar en Instagram
 
 on:
-  schedule:
-    # Lunes, miércoles y viernes a las 08:00 UTC (09:00 hora España peninsular en invierno, 10:00 en verano)
-    - cron: '0 8 * * 1,3,5'
-  workflow_dispatch:  # permite lanzarlo manualmente desde GitHub Actions
+  workflow_dispatch:  # disparado por cron-job.org (lun/mié/vie 10:00 Europe/Madrid)
 
 jobs:
   publish:
